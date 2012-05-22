@@ -1,0 +1,39 @@
+#rapportage_menu{float:left; position:relative; width:200px; margin-right:20px;}
+#rapportage_main{float:left; position:relative; width:1050px; padding:5px;}
+
+#projectoverzicht{float:left; position:relative; width:1050px; padding:15px 0px 20px 20px;}
+	#projectoverzicht h2 { width: 1020px; margin-bottom: 20px; padding: 10px; position: relative; float: left; background: #DED1C1; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; color: #333; }
+	.project_datum { margin: 5px 0px 0px 5px; }
+		.project_datum_vanaf { padding: 5px 0px 0px 23px; background: url("images/icon_start.gif") top left no-repeat; }
+       	.project_datum_divider { margin-left:0 !important; color: #FFF;  position: relative; float: left; }
+       	.project_datum_tot {padding: 5px 0px 0px 23px; background: url("images/icon_finish.gif") top left no-repeat; }
+    #projectoverzicht_top, #projectoverzicht_rijen{float:left; position:relative; width:1040px;}
+        .projectoverzicht_header{float:left; position:relative; font-weight:700;}
+            #projectoverzicht_organisatie_header { width: 450px; font-size: 13px; }
+            #projectoverzicht_project_header{/*width:250px;*/ padding: 5px 5px 5px 25px; font-size: 11px;}
+            #projectoverzicht_plan_uren_header,
+            #projectoverzicht_bestede_uren_header,
+            #projectoverzicht_balans_uren_header { width: 120px; text-align: center; margin-top: 18px; }
+    
+        .projectoverzicht_rij{ float: left; padding: 10px 0px; position: relative; width: 1010px; }
+            .projectoverzicht_organisatie{float:left; position:relative; width:100%; font-weight:700; margin-bottom: 10px; font-size: 13px;}
+            .projectoverzicht_project{float:left; position:relative; width:800px; cursor:pointer;}
+            
+                .projectoverzicht_project_uren{float:left; position:relative; width: 100%; background: #E6DBCE; margin-bottom:10px; padding:5px; font-weight:700;}
+                .projectoverzicht_project_titel { float:left; position:relative; width: 435px; }
+                .projectoverzicht_competentie_titel { float:left; position: relative; padding-left: 10px; width: 415px; }
+                    .projectoverzicht_project_titel span{float:left; position:relative; margin-left:25px;}
+                    .projectoverzicht_project_titel a{float:left; position:relative; margin-left:20px;}
+                .projectoverzicht_project_plan_uren,
+                .projectoverzicht_competentie_plan_uren,
+                .projectoverzicht_project_bestede_uren,
+                .projectoverzicht_competentie_bestede_uren,
+                .projectoverzicht_project_balans_uren,
+                .projectoverzicht_competentie_balans_uren { float: left; position: relative; width: 80px; margin-right: 40px; text-align: right; }
+                
+                .project_balans_pos, .competentie_balans_pos{color: green;}
+                .project_balans_be, .competentie_balans_be{color: black;}
+                .project_balans_neg, .competentie_balans_neg{color: red;}
+                
+            .projectoverzicht_competenties { float: left; position: relative; width: 800px; margin: 0px 0px 25px 16px; }
+                .projectoverzicht_competentie{ float: left; position: relative; width: 100%; }

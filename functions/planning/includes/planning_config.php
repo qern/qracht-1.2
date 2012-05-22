@@ -1,0 +1,1 @@
+<?php session_start();require($_SERVER['DOCUMENT_ROOT'].'/check_configuration.php');$what='aantal_iteraties, iteratie_duur';$from='planning_instellingen';$where='actief = 1';$planning_config=mysql_fetch_assoc(sqlSelect($what, $from, $where));?>

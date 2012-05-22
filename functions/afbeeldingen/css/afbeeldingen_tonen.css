@@ -1,0 +1,52 @@
+#foto_div { position: relative; float: left; width: 700px; padding: 0 15px; } 
+ #foto_div_header { position: relative; float: left; width: 100%; } 
+  #foto_div_navigatie { position: relative; float: left; width: 100%; padding: 10px 0px; } 
+   #vorige_foto { position: fixed; left: 0; font-size: 30px; font-weight: bold; } 
+   #navigatie_tekst { position: relative; float: left; position: relative; left: 50%; } 
+   #fancybox-left,
+   #fancybox-right { width: 10% !important; } 
+    #navigatie_tekst p { position: relative; float: left; margin: 0; } 
+    #huidige_foto { font-weight: bold; } 
+    #totaal_fotos { font-weight: bold; } 
+   #volgende_foto { position: fixed; right: 0; font-size: 30px; font-weight: bold; } 
+ 
+ #foto_div_foto { position: relative; float: left; width: 100%; height: 395px; padding: 10px 0; background: #F3ECE4; }
+  #foto_image { position: relative; left: 50px; border: none; width: 600px; height: 395px; position: relative; float: left; } 
+ 
+ #foto_div_acties { position: relative; float: left; width: 700px; padding-top: 10px; }
+  #foto_div_reacties { width: 500px; position: relative; float: left; }
+  #reageren h2 { width: 500px; font-size: 11px; position: relative; float: left; }
+  #reageren h2 a { margin-right: 300px; font-size: 11px !important; position: relative; float: right; }
+  #formulier { position: relative; float: left; width: 500px; padding-bottom: 10px; } 
+  #formulier p { position: relative; float: left; width: 500px; font-weight: bold; } 
+  #formulier textarea { width: 500px; margin-bottom: 7px; position: relative; float: left; }
+  #formulier input { position: relative; float: right; } 
+  
+  .reactie { position: relative; float: left; width: 490px; } 
+   .om,
+   .en_om { padding: 3px 0 0 6px; background: #F3ECE4; border-top: 1px solid #FFF; border-bottom: 1px solid #DED1C1; position: relative; float: left; }
+   .reactie_profiel_pic_bottom { display: none; }
+   
+   .reactie_links { width: 60px; position: relative; float: left; }
+   .reactie_links img { width: 50px; height: 50px; margin-bottom: 3px; border: none; } 
+   .reactie_rechts { position: relative; float: left; width: 400px; } 
+    .reactie_header { position: relative; float: left; width: 400px; } 
+    .auteur { font-weight: bold; font-size: 11px; margin-right: 10px; position: relative; float: left; } 
+    .datum { font-size: 11px; color: #AAA; position: relative; float: left; } 
+    .delete { position: absolute; top: 1px; right: -26px; cursor: pointer; }
+    .wijzig { position: relative; float: right; position: relative; top: 4px; margin-right: 10px; } 
+    .reactie_hover .delete,
+    .reactie_hover .wijzig,
+    .reactie_hover .button { display: block !important; position: relative; float: right; } 
+    .reactie .delete,
+    .reactie .wijzig,
+    .reactie .button { display: none; } 
+   .reactie_tekst { position: relative; float: left; width: 100%; } 
+  
+  #stel_in_als_profielfoto { position: relative; float: right; } 
+   #maak_profielfoto { padding: 1px 15px 2px 15px; font-size: 12px; color: #FFF; background: #74532a url("/portal/images/bkg_btn_brown.gif") bottom left repeat-x; border: medium none; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; position: relative; float: right; cursor: pointer; }
+   #stel_in_als_profielfoto h2#maak_profielfoto:hover { text-decoration: none !important; color: #FFF !important; background: #F58622 url("/portal/images/bkg_btn_orange.gif") bottom left repeat-x !important; } 
+   .wijzig_info_success { color: #008000; font-weight: bold; padding: 10px; border: 1px dotted #008000; } 
+    .wijzig_info_success h2 { color: #008000; } 
+    
+#fancybox-left, #fancybox-right { height: 395px !important; top: 0px !important; }

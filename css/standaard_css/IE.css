@@ -1,0 +1,4 @@
+.rounded-corners {
+    behavior: url(/css/border-radius.htc);
+    border-radius: 20px;
+}

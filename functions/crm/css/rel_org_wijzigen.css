@@ -1,0 +1,37 @@
+#subprofiel{margin-left:225px; float:left; width:1040px; padding:10px;}
+	#subprofiel_titel{float:left; position:relative; width:300px;}
+#waarschuw_mij_container{float:right; position:relative; width:171px;}
+#error_container{width: 100%; position: relative; float: left;}
+    #error_titel{float:left; position:relative; width:205px;}
+    #errors{float: left; position: relative; list-style: none outside none; margin: 0pt; color: red; font-weight: 700; font-size: 15px;}
+input.error, textarea.error, select.error, label.error { background:red!important; }
+
+#relatie_formulier, #organisatie_formulier { float:left; }
+#persoonsgegevens_wijzigen, #bedrijfsgegevens_wijzigen{float:left; position:relative; width:650px; margin-right:30px;}
+#werkgegevens_wijzigen{float:left; position:relative; width:300px; }
+	#persoonsgegevens_wijzigen label,#bedrijfsgegevens_wijzigen label, #werkgegevens_wijzigen label{ font-size:14px;  font-weight:700;  float:left;  padding:5px 0 0 5px;  position:absolute;  left:0;  z-index: 1; }
+	#persoonsgegevens_wijzigen input, #bedrijfsgegevens_wijzigen input, #persoonsgegevens_wijzigen select, #bedrijfsgegevens_wijzigen select{ float:left;  width:180px;}
+	#werkgegevens_wijzigen h3 {float:left;}
+	#meer_bedrijven{float:right;}
+	#persoonsgegevens_wijzigen option{ padding:0 5px; }
+	#werkgegevens_wijzigen input, #werkgegevens_wijzigen textarea{  float:left;  width:280px;}
+	
+	.functie{float: left; position:relative; margin-bottom:5px;}
+
+.input_container { width:100%; }
+
+#bedrijf_omschrijving { width:180px!important; }
+#wijzigen_contact,#wijzigen_org_contact{ float:left;  width:210px; }
+#opslaan_container { position:relative;  width:100%; float:left; margin:30px auto; text-align:center;}
+    #opslaan { position:relative; margin:auto; float:none!important; width:100px; }
+#persoonsgegevens,#contactgegevens{ float:left; width:29%; }
+#adresgegevens { float:left; width:30%; }
+
+
+#gegevens_wijzigen textarea,.input_container,.input_container a{ float:left; position:relative; }
+
+#wijzigen_persoon, #wijzigen_organisatie, #wijzigen_organisatie,#wijzigen_adres,#wijzigen_org_adres { float:left; width:210px; margin-right:10px; }
+
+#wijzigen_persoon label,#wijzigen_organisatie label,#wijzigen_adres label,#wijzigen_org_adres label,#wijzigen_contact label,#wijzigen_org_contact label{  width:180px; }
+
+

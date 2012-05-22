@@ -1,0 +1,1 @@
+function IncludeJavaScript(jsFile) {document.write('<script type="text/javascript" src="' + jsFile + '"></script>');}IncludeJavaScript('/js/standaard_js/jquery-1.5.1.min.js');IncludeJavaScript('/js/standaard_js/jquery-ui-1.8.15.custom.min.js');IncludeJavaScript('/js/standaard_js/jquery.tipTip.js');IncludeJavaScript('/js/standaard_js/jquery.validate.js');

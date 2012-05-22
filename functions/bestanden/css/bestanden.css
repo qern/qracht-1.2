@@ -1,0 +1,15 @@
+#bestanden { width: 1280px; position: relative; float: left; } 
+  #bestanden_top { width: 100%; margin-bottom: 10px; position: relative; float: left; } 
+		#bestanden_header { width: 1060px; margin-left: 220px; position: relative; float: left; } 
+		#bestanden_header h2 { width: 1035px; padding: 10px 5px 10px 20px; background: #F3ECE4; position: relative; float: left; }        
+    #bestand_zoeken { margin-left: 240px; position: relative; float: left; } 
+        #zoeken_header { width: 100%; color: #808080; font-weight: bold; text-align: left; } 
+        #end_search { margin-left: 5px; margin-top: 2px; position: relative; float: right; cursor: pointer; }
+        input#zoek_bestand { width: 200px; }
+        
+  	#bestanden_result { width: 1040px; margin-left: 240px; position: relative; float: left; } 
+  
+    /*Dit deel is voor het grote overzicht aan het begin*/
+    .bestanden_kolom { width: 330px; margin-right: 20px; position: relative; float: left; }
+    .bestanden_kolom_last { width: 330px; position: relative; float: left; }
+		.bestand { width: 305px; height: 25px; margin: 0px 20px 5px 0px; padding: 5px 10px 3px; background: #F3ECE4; border-bottom: 1px solid #DED1C1; border-top: 1px solid #FFF; position: relative; float: left; } 

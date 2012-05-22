@@ -1,0 +1,420 @@
+## Zet de rewrite engine aan
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+
+
+RewriteRule ^ - [L] 
+
+
+######################################################
+## Herschrijf de URL's naar SEO vriendelijke URL's
+######################################################
+
+RewriteRule ^(pdf)($|/) - [L]
+
+#RewriteRule ^(.*)/ index.php?pagina=$1
+
+######################################################
+## alles wat specifiek gebeuren moet voor het zoeken
+######################################################
+
+######################################################
+#
+# Als hoogste regel is het wijzigen van een gebruiker
+#
+###
+RewriteRule zoeken/kennis=([^/]+)/?$ index.php?function=zoeken [L] [NC]
+RewriteRule zoeken/kennis=([^/]+)?$ index.php?function=zoeken [L] [NC]
+
+####
+#
+# of een gekozen datum
+#
+####
+RewriteRule zoeken/?$ index.php?function=zoeken [L] [NC]
+RewriteRule zoeken?$ index.php?function=zoeken [L] [NC]
+
+######################################################
+## alles wat specifiek gebeuren moet voor de urentool:
+######################################################
+######################################################
+#
+# Als hoogste regel is het wijzigen van een specifieke urenregistratie
+#
+###
+# RewriteRule urentool/([^/]+)/wijzig/([^/]+)/?$ index.php?function=urentool&datum=$1&wijzig=1&registratie_id=$2 [L] [NC]
+# RewriteRule urentool/([^/]+)/wijzig/([^/]+)?$ index.php?function=urentool&datum=$1&wijzig=1&registratie_id=$2 [L] [NC]
+
+####
+#
+#daarna is het datum_id dat gereed gemaakt wordt
+#
+####
+# RewriteRule urentool/([^/]+)/gereed/?$ index.php?function=urentool&datum=$1&gereed=1 [L] [NC]
+# RewriteRule urentool/([^/]+)/gereed?$ index.php?function=urentool&datum=$1&gereed=1[L] [NC]
+
+
+
+####
+#
+# of een gekozen datum
+#
+####
+#RewriteRule urentool/rapportage/?$ index.php?function=urentool&page=rapportage [L] [NC]
+#RewriteRule urentool/rapportage?$ index.php?function=urentool&page=rapportage [L] [NC]
+
+RewriteRule urentool/([^/]+)/?$ index.php?function=urentool&query=$1 [L] [NC]
+RewriteRule urentool/([^/]+)?$ index.php?function=urentool&query=$1 [L] [NC]
+
+
+#####################################################
+## einde urentool
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor de planning
+#####################################################
+#
+# Als we een activiteit inline gaan wijzigen, gaan we naar de pagina en hebben we het activiteit_id nodig 
+#
+####
+#RewriteRule planning/dashboard/([^/]+)?$/ index.php?function=planning&page=dashboard&sortering=$1 [L] [NC]
+#RewriteRule planning/dashboard/([^/]+)?$ index.php?function=planning&page=dashboard&sortering=$1 [L] [NC]
+####
+#
+# Als we een reactie bij een activiteit inline gaan wijzigen, gaan we naar de pagina en hebben we het activiteit_id nodig 
+#
+####
+RewriteRule planning/activiteit-wijzigen/activiteit-id=([^/]+)/reactie-wijzigen/([^/]+)/?$ index.php?function=planning&refer=$1&page=activiteit_wijzigen&activiteit_id=$2&reactie_wijzigen=1&reactie_id=$3 [L] [NC]
+RewriteRule planning/activiteit-wijzigen/activiteit-id=([^/]+)/reactie-wijzigen/([^/]+)?$ index.php?function=planning&refer=$1&page=activiteit_wijzigen&activiteit_id=$2&reactie_wijzigen=1&reactie_id=$3 [L] [NC]
+####
+#
+# Als we een activiteit inline gaan wijzigen, gaan we naar de pagina en hebben we het activiteit_id nodig 
+#
+####
+RewriteRule planning/detail/activiteit-id=([^/]+)/edit/?$ index.php?function=planning&page=detail&activiteit_id=$1&edit=1 [L] [NC]
+RewriteRule planning/detail/activiteit-id=([^/]+)/edit?$ index.php?function=planning&page=detail&activiteit_id=$1&edit=1 [L] [NC]
+####
+#
+# Als we een project wijzigen gaan we naar de pagina en hebben we het project_id nodig
+#
+####
+RewriteRule planning/detail/project-id=([^/]+)/?$ index.php?function=planning&page=detail&detail=project&project_id=$1 [L] [NC]
+RewriteRule planning/detail/project-id=([^/]+)?$ index.php?function=planning&page=detail&detail=project&project_id=$1 [L] [NC]
+####
+#
+# Als we een activiteit wijzigen gaan we naar de pagina en hebben we het activiteit_id nodig
+#
+####
+RewriteRule planning/detail/activiteit-id=([^/]+)/?$ index.php?function=planning&page=detail&detail=activiteit&activiteit_id=$1 [L] [NC]
+RewriteRule planning/detail/activiteit-id=([^/]+)?$ index.php?function=planning&page=detail&detail=activiteit&activiteit_id=$1 [L] [NC]
+####
+#
+# het nog te plannen kan filteren, specifiek op prioriteit
+#
+####
+RewriteRule planning/nog-te-plannen/prioriteit=([^/]+)/?$ index.php?function=planning&page=nogteplannen&prioriteit=$1 [L] [NC]
+RewriteRule planning/nog-te-plannen/prioriteit=([^/]+)?$ index.php?function=planning&page=nogteplannen&prioriteit=$1 [L] [NC]
+
+RewriteRule planning/nog-te-plannen/?$ index.php?function=planning&page=nogteplannen [L] [NC]
+RewriteRule planning/nog-te-plannen?$ index.php?function=planning&page=nogteplannen [L] [NC]
+####
+#
+# het activiteiten archief kan filteren, specifiek op prioriteit
+#
+####
+RewriteRule planning/activiteit_archief/prioriteit=([^/]+)/?$ index.php?function=planning&page=activiteit_archief&prioriteit=$1 [L] [NC]
+RewriteRule planning/activiteit_archief/prioriteit=([^/]+)?$ index.php?function=planning&page=activiteit_archief&prioriteit=$1 [L] [NC]
+####
+#
+# het dashboard kan filteren, specifiek op prioriteit
+#
+####
+RewriteRule planning/dashboard/prioriteit=([^/]+)/?$ index.php?function=planning&page=dashboard&prioriteit=$1 [L] [NC]
+RewriteRule planning/dashboard/prioriteit=([^/]+)?$ index.php?function=planning&page=dashboard&prioriteit=$1 [L] [NC]
+
+####
+#
+# Toevoegen kan op twee manieren : 1e = activiteit en 2e = project (en 3e = een project o.b.v. een organisatie)
+#
+####
+RewriteRule planning/activiteit-toevoegen/?$ index.php?function=planning&page=toevoegen&toevoegen=activiteit [L] [NC]
+RewriteRule planning/activiteit-toevoegen?$ index.php?function=planning&page=toevoegen&toevoegen=activiteit [L] [NC]
+
+RewriteRule planning/project-toevoegen/([^/]+)/?$ index.php?function=planning&page=toevoegen&toevoegen=project&organisatie=$1 [L] [NC]
+RewriteRule planning/project-toevoegen/([^/]+)?$ index.php?function=planning&page=toevoegen&toevoegen=project&organisatie=$1 [L] [NC]
+
+RewriteRule planning/project-toevoegen/?$ index.php?function=planning&page=toevoegen&toevoegen=project [L] [NC]
+RewriteRule planning/project-toevoegen?$ index.php?function=planning&page=toevoegen&toevoegen=project [L] [NC]
+
+####
+#
+# Planning heeft veel id's, activiteit_id's
+#
+####
+RewriteRule planning/([^/]+)/([^/]+)/?$ index.php?function=planning&page=$1&activiteit_id=$2 [L] [NC]
+RewriteRule planning/([^/]+)/([^/]+)?$ index.php?function=planning&page=$1&activiteit_id=$2 [L] [NC]
+####
+#
+# Planning heeft veel pagina's.. allemaal subpagina's
+#
+####
+RewriteRule planning/([^/]+)/?$ index.php?function=planning&page=$1 [L] [NC]
+RewriteRule planning/([^/]+)?$ index.php?function=planning&page=$1 [L] [NC]
+#####################################################
+## einde planning
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor het crm
+#####################################################
+#
+# CRM heeft veel pagina's.. een paar specifieke veranderingen:
+#
+####
+#RewriteRule crm/zoeken/?$ index.php?function=crm&page=zoekpagina [L] [NC]
+#RewriteRule crm/zoeken?$ index.php?function=crm&page=zoekpagina [L] [NC]
+####
+#
+#Als je direct naar een persoon wilt: gebruik relatie_id
+#
+####
+#RewriteRule crm/relatie-lijst/relatie-id=([^/]+)/?$ index.php?function=crm&page=relatie-lijst&relatie_id=$1 [L] [NC]
+#RewriteRule crm/relatie-lijst/relatie-id=([^/]+)?$ index.php?function=crm&page=relatie-lijst&relatie_id=$1[L] [NC]
+####
+#
+#Als je direct naar een organisatie wilt: gebruik organisatie_id
+#
+####
+#RewriteRule crm/organisatie-lijst/organisatie-id=([^/]+)/?$ index.php?function=crm&page=organisatie-lijst&organisatie_id=$1 [L] [NC]
+#RewriteRule crm/organisatie-lijst/organisatie-id=([^/]+)?$ index.php?function=crm&page=organisatie-lijst&organisatie_id=$1[L] [NC]
+####
+#RewriteRule crm/([^/]+)/?$ index.php?function=crm&page=$1 [L] [NC]
+#RewriteRule crm/([^/]+)?$ index.php?function=crm&page=$1[L] [NC]
+
+RewriteRule crm/detail/organisatie-id=([^/]+)/?$ index.php?function=crm&pagina=detail&detail=organisatie&id=$1 [L] [NC]
+RewriteRule crm/detail/organisatie-id=([^/]+)?$ index.php?function=crm&pagina=detail&detail=organisatie&id=$1 [L] [NC]
+
+RewriteRule crm/detail/relatie-id=([^/]+)/?$ index.php?function=crm&pagina=detail&detail=relatie&id=$1 [L] [NC]
+RewriteRule crm/detail/relatie-id=([^/]+)?$ index.php?function=crm&pagina=detail&detail=relatie&id=$1 [L] [NC]
+
+RewriteRule crm/relatie-toevoegen/organisatie-id=([^/]+)/?$ index.php?function=crm&pagina=relatie-toevoegen&organisatie_id=$1 [L] [NC]
+RewriteRule crm/relatie-toevoegen/organisatie-id=([^/]+)?$ index.php?function=crm&pagina=relatie-toevoegen&organisatie_id=$1 [L] [NC]
+
+RewriteRule crm/relatie-toevoegen/?$ index.php?function=crm&pagina=relatie-toevoegen [L] [NC]
+RewriteRule crm/relatie-toevoegen?$ index.php?function=crm&pagina=relatie-toevoegen [L] [NC]
+
+RewriteRule crm/relatie-wijzigen/relatie-id=([^/]+)/?$ index.php?function=crm&pagina=relatie-wijzigen&relatie_id=$1 [L] [NC]
+RewriteRule crm/relatie-wijzigen/relatie-id=([^/]+)?$ index.php?function=crm&pagina=relatie-wijzigen&relatie_id=$1 [L] [NC]
+
+RewriteRule crm/relatie-wijzigen/organisatie-id=([^/]+)/?$ index.php?function=crm&pagina=relatie-wijzigen&organisatie_id=$1 [L] [NC]
+RewriteRule crm/relatie-wijzigen/organisatie-id=([^/]+)?$ index.php?function=crm&pagina=relatie-wijzigen&organisatie_id=$1 [L] [NC]
+
+RewriteRule crm/organisatie-toevoegen/?$ index.php?function=crm&pagina=organisatie-toevoegen [L] [NC]
+RewriteRule crm/organisatie-toevoegen?$ index.php?function=crm&pagina=organisatie-toevoegen [L] [NC]
+
+RewriteRule crm/organisatie-wijzigen/organisatie-id=([^/]+)/?$ index.php?function=crm&pagina=organisatie-wijzigen&organisatie_id=$1 [L] [NC]
+RewriteRule crm/organisatie-wijzigen/organisatie-id=([^/]+)?$ index.php?function=crm&pagina=organisatie-wijzigen&organisatie_id=$1 [L] [NC]
+
+RewriteRule crm/zoeken/?$ index.php?function=crm&pagina=zoekpagina [L] [NC]
+RewriteRule crm/zoeken?$ index.php?function=crm&pagina=zoekpagina [L] [NC]
+####
+#
+#Als je direct naar een persoon wilt: gebruik relatie_id
+#
+####
+RewriteRule crm/relatie-lijst/relatie-id=([^/]+)/?$ index.php?function=crm&pagina=relatie-lijst&relatie_id=$1 [L] [NC]
+RewriteRule crm/relatie-lijst/relatie-id=([^/]+)?$ index.php?function=crm&pagina=relatie-lijst&relatie_id=$1[L] [NC]
+####
+#
+#Als je direct naar een organisatie wilt: gebruik organisatie_id
+#
+####
+RewriteRule crm/organisatie-lijst/organisatie-id=([^/]+)/?$ index.php?function=crm&pagina=organisatie-lijst&organisatie_id=$1 [L] [NC]
+RewriteRule crm/organisatie-lijst/organisatie-id=([^/]+)?$ index.php?function=crm&pagina=organisatie-lijst&organisatie_id=$1[L] [NC]
+####
+RewriteRule crm/([^/]+)/?$ index.php?function=crm&page=$1 [L] [NC]
+RewriteRule crm/([^/]+)?$ index.php?function=crm&page=$1[L] [NC]
+#####################################################
+## einde crm
+#####################################################
+
+######################################################
+## alles wat specifiek gebeuren moet voor de admin
+######################################################
+
+######################################################
+## alles wat specifiek gebeuren moet voor de admin
+######################################################
+
+######################################################
+#
+# Als hoogste regel is het wijzigen van een gebruiker
+#
+###
+RewriteRule admin/wijzig/gebruiker=([^/]+)/?$ index.php?function=admin&page=beheer&gebruiker_id=$1 [L] [NC]
+RewriteRule admin/wijzig/gebruiker=([^/]+)?$ index.php?function=admin&page=beheer&gebruiker_id=$1 [L] [NC]
+
+####
+#
+# of een gekozen datum
+#
+####
+RewriteRule admin/aanmaken/?$ index.php?function=admin&page=beheer [L] [NC]
+RewriteRule admin/aanmaken?$ index.php?function=admin&page=beheer [L] [NC]
+
+######################################################
+## alles wat specifiek gebeuren moet voor de admin
+######################################################
+
+######################################################
+#
+# Als hoogste regel is het wijzigen van een gebruiker
+#
+###
+RewriteRule home/wijzig/organisatie=([^/]+)/?$ index.php?function=organisatie&page=beheer&organisatie_nummer=$1 [L] [NC]
+RewriteRule organisatie/wijzig/organisatie=([^/]+)?$ index.php?function=organisatie&page=beheer&organisatie_nummer=$1 [L] [NC]
+
+####
+#
+# of een gekozen datum
+#
+####
+RewriteRule organisatie/aanmaken/?$ index.php?function=organisatie&page=beheer [L] [NC]
+RewriteRule organisatie/aanmaken?$ index.php?function=organisatie&page=beheer [L] [NC]
+
+#####################################################
+## einde urentool
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor nieuws
+#####################################################
+#
+# als er een nieuws is is gegeven, wijzig dan
+#
+####
+RewriteRule publicaties/wijzigen/nieuws-id=([^/]+)/?$ index.php?function=publicaties&page=invoer&nieuws_id=$1 [L] [NC]
+RewriteRule publicaties/wijzigen/nieuws-id=([^/]+)?$ index.php?function=publicaties&page=invoer&nieuws_id=$1 [L] [NC]
+
+RewriteRule publicaties/toevoegen/?$ index.php?function=publicaties&page=invoer [L] [NC]
+RewriteRule publicaties/toevoegen?$ index.php?function=publicaties&page=invoer [L] [NC]											
+#####################################################
+## einde profiel
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor het profiel
+#####################################################
+#
+# als proiel/wijzigen wordt aangeroepen, open de bijhorende profielpagina.
+#
+####
+RewriteRule profiel/([^/]+)/?$ index.php?function=profiel&gebruikersnaam=$1 [L] [NC]
+RewriteRule profiel/([^/]+)?$ index.php?function=profiel&gebruikersnaam=$1 [L] [NC]										
+#####################################################
+## einde profiel
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor het foto overzicht
+#####################################################
+
+####
+#
+#overzicht van de foto's van een bepaalde gebruiker
+#
+####
+RewriteRule afbeeldingen/gebruiker/([^/]+)/?$ index.php?function=afbeeldingen&profielnaam=$1 [L] [NC]
+RewriteRule afbeeldingen/gebruiker/([^/]+)?$ index.php?function=afbeeldingen&profielnaam=$1 [L] [NC]
+
+#####################################################
+## einde foto overzicht
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor het bestanden overzicht
+#####################################################
+
+####
+#
+#overzicht van de foto's van een bepaalde gebruiker
+#
+####
+#RewriteRule bestanden/gebruiker/([^/]+)/?$ index.php?function=bestanden&profielnaam=$1 [L] [NC]
+#RewriteRule bestanden/gebruiker/([^/]+)?$ index.php?function=bestanden&profielnaam=$1 [L] [NC]
+
+#####################################################
+## einde bestanden overzicht
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor het link overzicht
+#####################################################
+
+####
+#
+#overzicht van de links's van een bepaalde gebruiker
+#
+####
+RewriteRule links/gebruiker/([^/]+)/?$ index.php?function=links&profielnaam=$1 [L] [NC]
+RewriteRule links/gebruiker/([^/]+)?$ index.php?function=links&profielnaam=$1 [L] [NC]
+
+#####################################################
+## einde links overzicht
+#####################################################
+
+#####################################################
+## alles wat specifiek gebeuren moet voor het account
+#####################################################
+#
+# het account heeft maar 1 status: gewijzigd
+#
+####
+RewriteRule account/([^/]+)/?$ index.php?function=account&actie=$1 [L] [NC]
+RewriteRule account/([^/]+)?$ index.php?function=account&actie=$1 [L] [NC]
+
+#####################################################
+## einde account
+#####################################################
+
+#####################################################
+## uitloggen
+#####################################################
+
+RewriteRule uitloggen/?$ includes/uitloggen.php [L] [NC]
+RewriteRule uitloggen?$ index.php?function=$1 [L] [NC]
+
+#####################################################
+## einde uitloggen
+#####################################################
+
+#####################################################
+## home
+#####################################################
+
+RewriteRule home/nieuws=([^/]+)/?$ index.php?function=home&nieuws_id=$1 [L] [NC]
+RewriteRule home/nieuws=([^/]+)?$ index.php?function=home&nieuws_id=$1 [L] [NC]
+
+RewriteRule home/?$ index.php?function=home [L] [NC]
+RewriteRule home?$ index.php?function=home [L] [NC]
+
+#####################################################
+## einde home
+#####################################################
+
+
+####
+#de basis: de eerste variabele is de function
+####
+RewriteRule ([^/]+)/?$ index.php?function=$1 [L] [NC]
+RewriteRule ([^/]+)?$ index.php?function=$1 [L] [NC]
+
+
+RewriteRule ^phpinfo.php?$ phpinfo.php [L] [NC]
+
+
+

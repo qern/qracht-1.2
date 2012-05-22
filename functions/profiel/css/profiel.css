@@ -1,0 +1,118 @@
+#profiel { position: relative; float: left; width: 1280px; }
+.profiel_header { width: 100%; height: 20px; margin: 0px; padding: 10px 5px 10px 20px; font-weight: bold; color: #73532A; background: #F3ECE4; position: relative; float: left; }
+#profiel_left .profiel_header { width: 195px; height: 20px; margin: 5px 0 0; padding: 2px 20px 2px 5px; font-weight: bold; color: #FFF; background: #CEB08A url("images/bkg_dropshadow_right.png") top left repeat-y; position: relative; float: left; }
+.info_title { font-weight: bold; position: relative; float: left; margin: 0 }
+.profiel_header a { position: relative; float: right; }
+
+#profiel_left { width: 220px; margin-top: 1px; position: relative; float: left; }
+ 
+ #info { position: relative; float: left; padding-bottom: 10px; width: 220px; /*height: 235px;*/ }
+  #info_img { position: relative; float: left; width: 220px; /*height: 165px;*/ }
+   #info_img img { position: relative; float: left; /*width: 200px; height: 150px;*/ border: none; }
+  #info_text { position: relative; float: left; width: 200px; }
+   #info_text h2 { width: 210px; margin: 0px 0px 5px 0px; padding: 5px; background: url("images/bkg_dropshadow_right.png") repeat-y scroll left top #F3ECE4; color: #73532A; }
+   
+   #info_text p { position: relative; float: left; width: 200px; margin: 0; }
+   #email span, #telefoon span { font-weight: bold; margin-right: 3px; }
+ #social { position: relative; float: left; }
+  #social_links { margin-top: 8px; position: relative; float: left; }
+  #social_links img { width: 24px; height: 24px; margin-right: 3px; border: 0px; }
+  #leuke_collega { position: relative; float: right; width: 131px; }
+  #leuke_collega_aantal { background: url("images/leuke_collega_counter.png") no-repeat top left transparent; position: relative; float: right; width: 24px; height: 22px; padding-left: 16px; color: #9c3; font-weight: 700 }
+ #kenniskaart { position: relative; float: left; padding-top: 10px; }
+  .kennis { width: 220px; font-weight: bold; position: relative; float: left; }
+ 
+#profiel_center { position: relative; float: left; width: 500px; margin-right: 20px; }
+
+ #links_container { position: relative; float: left; width: 480px; height: 230px; padding-bottom: 10px; }
+  .link_url { position: relative; float: left; width: 100%; }
+
+ #status_container { width: 480px; margin-bottom: 30px; position: relative; float: left; }
+ #nieuwe_status { position: relative; float: left; width: 480px; margin-bottom: 5px; padding-top: 5px; }
+  #status_schrijven { width: 458px; margin: 5px 0px 9px 0px; position: relative; float: left; }
+  #status_opslaan { position: relative; float: right; }
+  
+ #statussen { width: 480px; position: relative; float: left; }
+ #status_lijst_headers { border-bottom: none !important; }
+  .status { width: 480px; border-top: 1px solid #eee; padding: 5px 0; position: relative; float: left; }
+   .status_left { position: relative; float: left; }
+    .status_left img { width: 50px; height: 50px; padding: 0px 10px 10px 0px; position: relative; float: left; border: 0px; }
+   .status_right { width: 420px; margin-bottom: 15px; position: relative; float: left; }
+   
+    .status_name { width: 100%; margin-bottom: 5px; position: relative; float: left; }
+     .status_name h3 { position: relative; float: left; }
+     .status_datum { margin-left: 15px; color: #AAA; position: relative; float: left; }
+
+     .status .delete_status { display: none; position: relative; float: right; }
+     .status_hover .delete_status { position: relative; float: right; display: block !important; }
+     .delete_container { width: 16px; height: 16px; padding: 3px; position: absolute; right: 0px; cursor: pointer; }
+      .delete_container .delete { top: 0px !important; }
+      
+    /*img.delete { position: absolute; right: -30px; cursor: pointer; }*/
+      
+    .status_content { position: relative; float: left; width: 100%; }
+    
+   .reacties_reageren_tonen { padding: 3px 0; position: relative; float: left; }
+   .toon_reacties { margin-right: 10px; position: relative; float: left; }
+   .toon_reageren { position: relative; float: left; } 
+    .toon_reacties a { position: relative; float: left; }
+    .reactie { width: 480px; margin-left: 57px; position: relative; float: left; }
+    .om,
+    .en_om { width: 420px; margin-left: 57px; padding: 3px 0 0 6px; background: #E6DBCE; border-top: 1px solid #FFF; border-bottom: 1px solid #DED1C1; position: relative; float: left; }
+    .en_om {}
+    .reactielijst { margin-top: 0px; position: relative; float: left; }
+    .reactie_profiel_pic img { width: 32px; height: 32px; }
+    .reactie_profiel_pic_bottom { display: none; }
+   
+    .reactie_links { width: 40px; position: relative; float: left; }
+    .reactie_links img { border: none; }
+    .reactie_rechts { width: 320px; position: relative; float: left; }
+    .reactie_header { width: 380px; position: relative; float: left; }
+    .reactie_header p { margin-bottom: 0px; }
+     .auteur { font-weight: bold; font-size: 11px; position: relative; float: left; } 
+     .datum { margin-left: 10px; color: #AAA; position: relative; float: left; }
+     .reactie .delete_reactie { display: none; position: absolute; right: 0px; top: -2px; }
+     .reactie_hover .delete_reactie { position: relative; float: right; display: block !important; }
+    .reactie_tekst { width: 100%; position: relative; float: left; }
+    .status_reageren { width: 426px; margin-left: 57px; background: #E6DBCE; position: relative; float: left; }
+     .status_reageren textarea { width: 362px; margin-bottom: 10px; position: relative; float: left; }
+     .reageren_button_container { position: relative; float: left; width: 100%; }
+      .status_reageren button { position: relative; float: right; }
+      .status_reactie_profilepic { width: 40px; position: relative; float: left; }
+      .status_reactie_profilepic img { width: 32px; height: 32px; margin: 3px 0px 0px 6px; position: relative; float: left; }
+   
+#profiel_right { position: relative; float: left; width: 500px; margin-right: 20px; }
+ #fotos { position: relative; float: left; width: 505px; overflow: hidden; }
+  #foto_headers a { position: relative; float: right !important; width: 175px !important; height: 20px !important; }
+  #fotos a { position: relative; float: left; width: 120px; height: 105px; }
+  #fotos img { background: transparent url("images/bkg_images.png") bottom right no-repeat; border: none; padding-bottom: 29px; padding-right: 26px; }
+  #fotos .wrapper_profiel_info { padding-top: 10px !important; }
+  .wrapper_profiel_info { margin-left: 20px; position: relative; float: left; }
+  #statussen_lijst.wrapper_profiel_info { margin-left: 0px; }
+  #statussen_lijst .status,
+  #statussen .status { margin-left: 20px; }
+  #profiel_right .wrapper_profiel_info { padding: 10px 0px; }
+  
+ #recente_activiteit { width: 505px; position: relative; float: left; overflow: hidden; }
+  .recente_reactie { width: 505px; position: relative; float: left; }
+   .recente_reactie_link,
+   .recente_status_link,
+   .recente_wijziging_link { width: 380px; position: relative; float: left; }
+   .recente_reactie_datum,
+   .recente_status_datum,
+   .recente_wijziging_datum { width: 120px; font-size: 11px; color: #AAA; text-align: right; position: relative; float: right; }
+  #recente_activiteit .wrapper_profiel_info { margin-left: 0px; }
+   
+   p#email { line-height: 1.7em; margin-top: 2px; padding-left: 25px; background: url("images/icon_email.png") top left no-repeat; }
+   p#telefoon { line-height: 1.7em; margin-top: 2px; padding-left: 25px; background: url("images/icon_telephone.png") top left no-repeat; }
+   
+#overige_nieuws_meer_lezen { width: 480px; color: #FF4E00; padding: 20px 10px 0px 20px; position: relative; float: left; }
+#overige_nieuws_meer_lezen:hover { color: #333; cursor: pointer; }
+
+	.next_batch { padding: 1px 15px 2px 15px; font-size: 12px; color: #FFF; background: #74532a url("/portal/images/bkg_btn_brown.gif") bottom left repeat-x; border: medium none; position: relative; float: left; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; }
+	.next_batch:hover { background: #F58622 url("/portal/images/bkg_btn_orange.gif") bottom left repeat-x; }
+	span.next_batch:link,
+	span.next_batch:visited,
+	span.next_batch:hover { color: #FFF; text-decoration: none; }
+	
+.niets_gevonden { margin-left: 20px; }

@@ -1,0 +1,63 @@
+#afbeeldingen{float:left; width:1280px;}
+    #afbeeldingen_top{float:left; width:100%; margin-bottom:10px; border-bottom:1px solid #eee; padding:5px 0;}
+        #view{float:left; font-weight:700; position: relative; top:5px; width:190px;}
+            #view_header{width:100%; color: gray; font-weight:700;}
+            .active_view{color:#FF4E00 !important;}
+            .view_hover{text-decoration: underline; color:#FF4E00 !important;}
+            .album_view, .foto_view{color: gray; font-weight: 700; font-size: 20px;}
+            .album_view{float:left; cursor:pointer;} .foto_view{float:left; margin-left: 50px; cursor:pointer;}
+            
+        #filters{float:left; width:400px;  position:relative; left:250px;}
+            #profiel_nieuws{float:left; width:400px;}
+                #profiel_nieuws_header{width:100%; color: gray; font-weight:700;}
+                .active_filter{color:#FF4E00 !important;}
+                .filter_hover{text-decoration: underline; color:#FF4E00 !important;}
+                .nieuws_filter, .profiel_filter, .alles_filter{color: gray; font-weight: 700; font-size: 20px; text-align:center;}
+                .alles_filter{float:left; width:35px; cursor:pointer;}
+                .nieuws_filter{float:left; width:215px; cursor:pointer;} 
+                .profiel_filter{float:right; width:150px; cursor:pointer;}
+                
+        #album_zoeken, #foto_zoeken{float:right;}
+                #zoeken_header{width:100%; color: gray; font-weight:700; text-align: left;}
+                #end_search{float:right; margin-left:5px; margin-top:2px;}
+                            
+    #afbeeldingen_result{float:left;}
+    
+        /*Dit deel is voor het grote overzicht aan het begin*/
+        .afbeeldingen_kolom{float:left; width:410px; margin-right:25px;}
+        .afbeeldingen_kolom_last{float:right; width:410px;}
+            
+        /*Dit deel is voor het grote overzicht van --ALBUMS-- aan het begin*/    
+        .album{float:left; width:400px; padding: 4px; height:250px; display:block; background-color:gray; border:1px solid #eee; margin-bottom:10px;}
+        .album_hover{background-color: #6D7B8D;}
+            .album_omslag{width:400px; height:200px; float:left;}
+                .album_omslag_image{width:400px; height:200px; float:left;}
+            .album_naam{float:left; width:100%; color:#eee; font-weight:700;}
+        
+        /*Dit deel is voor het grote overzicht van --FOTO'S-- aan het begin*/    
+        .afbeeldingen_kleine_kolom{float:left; width:210px; margin-right:4px;}
+        .afbeeldingen_kleine_kolom_last{float:right; width:210px;}
+            .foto_klein{float:left; width:200px; padding: 4px; height:150px; display:block; background-color:gray; border:1px solid #eee; margin-bottom:4px;}
+            .foto_klein_thumb a{width:200px; height:100px; display:block;}
+
+                .foto_klein_omslag{width:200px; height:100px; float:left;}
+                    .foto_klein_image{width:200px; height:100px; float:left;}
+                
+                .foto_klein_naam{float:left; width:100%; color:#eee; font-weight:700;}
+                        .foto_klein_omschrijving{float:left; width:100%;}
+                        .foto_klein_bron{float:left; width:100%;} .foto_klein_bron a{float:right;}
+        
+            #fotoalbum_nav{float:left; width:100%; font-weight:700; padding: 5px 0px; border-bottom: 1px solid #eee; margin-bottom:10px;}
+                #Terug_naar_overzicht{float:left; width:210px;}
+                #profiel_declaratie{float:left; width:860px; text-align:center;}
+                    #profiel_sub_declaratie{color:gray; margin-right:3px;}
+                #nieuws_declaratie{float:left; width:860px; text-align:center;}
+                    #nieuws_sub_declaratie{color:gray; margin-right:3px;}
+                #bekijk_bron{float:right; width:105px;}
+        
+        .foto{float:left; width:400px; height:250px; display:block; padding: 4px; background-color:gray; border:1px solid #eee; margin-bottom:10px;}
+        .foto_thumb a{width:400px; height:200px; display:block;}
+        .foto_hover{background-color: #6D7B8D;}
+            .foto_omslag{width:400px; height:200px; float:left;}
+                .foto_image{width:400px; height:200px; float:left;}
+            .foto_naam{float:left; width:100%; color:#eee; font-weight:700;}

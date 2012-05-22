@@ -1,0 +1,181 @@
+#dashboard { position: relative; float: left; width: 1280px; background: url("images/bkg_dropshadow_right.png") top left repeat-y; }
+#dashboard_left { width: 220px; margin-top: 1px; padding-bottom: 10px; position: relative; float: left; }
+	#dashboard_left #links { padding: 2px 20px 2px 5px; margin-bottom: 5px; font-weight: bold; background: #ceb08a url("images/bkg_dropshadow_right.png") top left repeat-y; color: #FFF; }
+	#dashboard_left #agenda { padding: 2px 20px 2px 5px; margin: 10px 0px 0px 0px; font-weight: bold; background: #ceb08a url("images/bkg_dropshadow_right.png") top left repeat-y; color: #FFF; }
+	#dashboard_left .link { padding: 0px; }
+	p.date_header { margin-bottom: 10px !important; padding: 2px 20px 2px 5px; background: #e6dbce url("images/bkg_dropshadow_right.png") top left repeat-y; }
+	p.date_body { padding-right: 15px; }
+#dashboard_center { position: relative; float: left; padding: 0px 0px 20px 0px; width: 500px; /*border-left: 1px solid #CCC;*/}
+
+    #homepage_navigatie { width: 100%; /*background: #eee;*/ margin-bottom: 10px; position: relative; position: relative; float: left; }
+        #filters { position: absolute; top: -31px; right: 7px; }
+            #filter_intro { position: relative; float: left; font-weight: bold; width: 45px; padding-top: 11px; }
+                #filter_alles,
+                #filter_nieuws,
+                #filter_foto,
+                #filter_reactie { position: relative; float: left; margin-left: 2px; }
+        #zoekbalk { position: relative; float: right; padding: 5px; }
+            #vul_in { width: 387px; position: relative; position: relative; float: left; }
+            #submit { position: relative; position: relative; float: right; }
+    
+    #overig_nieuwslijst { position: relative; float: left; }
+    	#overig_nieuws .login,
+    	#overig_nieuws .wijziging,
+    	#overig_nieuws .link { width: 470px; padding: 10px 20px 0px 30px; position: relative; float: left; }
+
+    		.login_link { padding-left: 23px; background: url("images/user.png") top left no-repeat; }
+    		.wijziging_link { padding-left: 23px; background: url("images/edit.png") top left no-repeat; }
+    		.link_link { padding-left: 23px; background: url("images/link.png") top left no-repeat; }
+    		
+    		.login_datum,
+    		.wijziging_datum,
+    		.link_datum { padding-left: 23px; color: #777; }
+    
+    #overige_nieuws_meer_lezen { width: 480px; color: #FF4E00; padding: 20px 10px 0px 30px; position: relative; float: left; }
+    #overige_nieuws_meer_lezen:hover { color: #333; cursor: pointer; }
+    
+    .next_batch { padding: 1px 15px 2px 15px; font-size: 12px; color: #FFF; background: #74532a url("/images/bkg_btn_brown.gif") bottom left repeat-x; border: medium none; position: relative; float: left; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; }
+	.next_batch:hover { background: #F58622 url("/images/bkg_btn_orange.gif") bottom left repeat-x; }
+	span.next_batch:link,
+	span.next_batch:visited,
+	span.next_batch:hover { color: #FFF; text-decoration: none; }
+    
+    #nieuws_lijst {}
+    	#nieuws_lijst h2 { width: 495px; padding: 10px 5px 10px 20px !important; position: relative; float: left; background: #f3ece4; margin-bottom: 0px; }
+        #belangrijk_nieuws { width: 490px; position: relative; float: left; }
+        #overig_nieuws { width: 520px; position: relative; float: left; }
+            #waiting { width: 490px; position: relative; float: left; }
+            #waiting_text { width: 100%; text-align: center; position: relative; position: relative; float: left; }
+                #waiting_img { margin-left: 245px; position: relative; position: relative; float: left; }
+    
+        .nieuwsitem,
+        .nieuwsitem_hover { width: 480px; padding: 20px 10px 15px 30px; border-bottom: 1px solid #E6DBCE; position: relative; float: left; }
+        .belangrijk { background: url("images/bkg_icon_important.png") top left no-repeat !important; border-bottom: 1px solid #E6DBCE; }
+        .belangrijk:hover { background: url("images/bkg_icon_important_hover.png") top left no-repeat !important; }
+        .nieuwsitem,
+        .status { /*background: url("images/bkg_important.png") top left repeat-x !important;*/ }
+        .status .status_header .status_header a
+        .nieuwsitem_hover { background: url("images/bkg_important.png") top left repeat-x !important; }
+        .belangrijk_hover { background: url("images/warning2.png") bottom right no-repeat #eee; }
+            .nieuwsitem_header { width: 100%; position: relative; float: left; z-index: 10; }
+                .nieuwsitem_header h3 { width: 430px; padding-bottom: 5px; font-size: 11px; position: relative; position: relative; float: left; }
+                .nieuwsitem_hover .nieuwsitem_header h3 { color: #28373C !important; }
+                .nieuwsitem_header span { width: 100%; margin-top: -3px; font-size: 11px; font-weight: normal; color: #9b8b75; position: relative; position: relative; float: left; }
+                .nieuwsitem_afbeeldingen { position: relative; float: right; width: 16px; height: 16px; margin-right: 8px; }
+                .nieuwsitem_bestanden { width: 16px; height: 16px; position: relative; position: relative; float: right; }
+            .nieuwsitem_content { width: 460px; margin: 5px 0px 10px 0px; position: relative; position: relative; float: left; }
+            .nieuwsitem_content .content { position: relative; float: left; }
+            .nieuwsitem_content .content h2 { position: relative; float: left; } 
+                .teaser_img { width: 60px; height: 60px; padding: 0px 10px 10px 0px; border: none; position: relative; position: relative; float: left; top: 5px; }
+                .nieuwsitem_foto{position: relative; float: left; margin-left: 50px; }
+                .nieuwsitem_content p { margin-bottom: 0px; position: relative; float: left; }
+                .teaser a img { position: relative; float: left; padding: 0px 12px 12px 0px; }
+                p.teaser { font-weight: bold; }
+            .imageleft,
+            .imageleft img { position: relative; float: left; padding: 0px 12px 12px 0px; }
+            .copyright { position: relative; float: left; clear: both; }
+            
+            .reacties_reageren_tonen { position: relative; float: left; padding: 5px 5px 5px 30px; width: 485px; margin: 0px 0px -10px -30px; font-size: 11px; }
+            .toon_reacties { position: relative; float: left; margin-right: 10px; }
+            .toon_reacties a { position: relative; float: left; }
+            .toon_reageren { position: relative; float: left; }
+            .nieuwsitem_next { position: absolute; right: 0; width: 32px; height:100%; }
+                .nieuwsitem_next a,
+                .nieuwsitem_next a:link,
+                .nieuwsitem_next a:visited { width: 32px; height: 100%; background: url("images/next.png") center center no-repeat transparent; position: relative; position: relative; float: left; left: 9px; text-decoration: none; border-bottom: none; }
+                .nieuwsitem_next a:hover,
+                .nieuwsitem_next a:active { width: 47px; height: 100%; background:url("images/next.png") center center no-repeat transparent; position: relative; position: relative; float: left; left: 9px; text-decoration: none; border-bottom: none; }
+                
+                .nieuwsitem .nieuwsitem_next img {display:none;}
+                    .nieuwsitem_next img{position:absolute; left:25px; top:40px; width:32px; height:32px;}
+            .nieuws_reactielijst,
+            .foto_reactielijst { position: relative; float: left; }
+                    
+        .foto, .foto_hover { width: 480px; position: relative; padding: 20px 10px 10px 30px; position: relative; float: left; }
+        .foto {}
+        .foto_hover {}
+            .foto_header { position: relative; float: left; width: 100%; }
+                .foto_header h3 { position: relative; float: left; width: 430px; }
+                .foto_hover .foto_header h3 { color: #027EC0 !important; }
+                .foto_header span { position: relative; float: left; width:100%; color: gray; font-size: 11px; font-weight: bold; }
+                .foto_afbeeldingen { position: relative; float: right; width:16px; height: 16px; margin-right: 8px; }
+                .foto_bestanden { position: relative; float: right; width:16px; height: 16px; }
+            .foto_content { position: relative; float: left; width: 100%; padding: 10px 0px; }
+                .foto_content img { position: relative; float: left; margin-left: 50px; border: 0px; }
+                .foto_content p{position: relative; float: left; }
+                
+        .reageren_dicht {}
+        .reageren_open {}
+        .wrapper_tijdlijn_reageren { width: 399px; background: #E6DBCE; border-top: 1px solid #FFF; border-bottom: 1px solid #DED1C1; position: relative; float: left; }
+        .tijdlijn_reageren { margin-left: 57px; position: relative; float: left; }
+        .tijdlijn_reactie_profilepic { width: 40px; float: left; }
+            .tijdlijn_reactie_profilepic img { margin-top: 3px; padding: 0 0 0 6px; }
+        .tijdlijn_reageren textarea { width: 335px; margin-bottom: 7px; }
+        .tijdlijn_reageren .button { float: right; }
+        
+        .tijdlijn_reactie img.delete { display: none; }
+        .tijdlijn_reactie:hover img.delete { display: block; }
+        
+        .status { width: 480px; margin-bottom: 10px; padding: 20px 10px 15px 30px; border-bottom: 1px solid #E6DBCE; position: relative; float: left; }
+            .status_links { position: relative; float: left; width: 60px; }
+            .status_links a img { border: 0px; }
+            .status_rechts { position: relative; float: left; width: 410px; }
+                .status_header { width: 410px; font-size: 11px; position: relative; position: relative; float: left; }
+                .status_header a { /*float: left; position: relative; width: 300px;*/ font-weight: bold; }
+                .status_header span { margin-top: -3px; font-size: 11px; font-weight: normal; color: #9b8b75; position: relative; position: relative; float: right; }
+                .status_content { width: 410px; position: relative; position: relative; float: left; }
+                
+#dashboard_right { position: relative; float: right; width: 460px; background: #F3ECE4; padding: 0px 20px; }
+	#dashboard_right #nieuwsitem_header h2 { margin-bottom: 0px; font-size: 11px; }
+	#dashboard_right .reactie .reactie_header { width: 413px !important; }
+	h2.summary { font-size: 13px; }
+    #nieuwsitem { position: relative; float: left; width: 500px; }
+        #nieuwsitem_header { position: relative; float: left; width: 100%; padding: 10px 0px; }
+                #nieuwsitem_header h2 { position: relative; float: left; width: 100%; }
+                #nieuwsitem_header span { position: relative; float: left; width: 100%; color: #9B8B75; font-size: 11px; font-weight: normal; }
+        #nieuwsitem_acties { position: relative; float: left; margin: 10px 0; }
+            #nieuwsitem_acties_activators { position: relative; float: left; width: 100%; }
+                #fotos { position: relative; float: left; width: 100%; margin: 5px 0; }
+                #nieuwsitem_acties #fotos img { border: 0px; } 
+                #bestanden { position: relative; float: left; width: 100%; margin: 5px 0; }
+        
+        #reageren { position: relative; float: left; width: 457px; margin: 10px 0; }
+        #reactie_lijst { margin-top: 15px; }
+        .reageren_margin { margin-right: 10px; }
+        
+            #reageren h2 { position: relative; float: left; width: 100%; }
+            #reageren h2 a { position: relative; float: right; }
+            #reactie_formulier_formulier { position: relative; float: left; width: 460px; }
+                #reactie_formulier_formulier textarea { position: relative; float: left; width: 438px; margin: 5px 0px 12px 0px; }
+                #reactie_formulier_formulier input { position: relative; float: right; }
+                
+            .reactie { position: relative; float: left; width: 450px; }
+            .tijdlijn_reactie { width: 393px; margin-left: 57px; padding: 3px 0px 0px 6px; background: #E6DBCE; border-top: 1px solid #FFF; border-bottom: 1px solid #DED1C1; position: relative; float: left; }            
+            .om { background-color: #E6DBCE; text-decoration: none; position: relative; float: left; }
+            .en_om { position: relative; float: left; text-decoration: none; /*padding: 5px;*/ }
+            #dashboard_right .om,
+            #dashboard_right .en_om { padding: 5px; }
+            
+            .reactie_links { width: 40px; position: relative; float: left; }
+            .reactie_links img { position: relative; border: none; }
+            .reactie .reactie_rechts { position: relative; float: left; width: 390px; }
+            .reactie .reactie_header { position: relative; float: left; width: 430px; }
+            .tijdlijn_reactie .reactie_rechts { width: 345px; padding-bottom: 2px; word-wrap: break-word; position: relative; float: left; } 
+            .tijdlijn_reactie .reactie_header { width: 350px; position: relative; float: left; clear: both; }
+                .auteur { font-weight: bold; margin-right: 10px; position: relative; position: relative; float: left; } 
+                .datum { font-size: 11px; font-weight: normal; color: #9b8b75; position: relative; position: relative; float: left; }
+                .delete { position: absolute; top: 2px; right: 4px; cursor: pointer; }
+                .delete img { border: 0px; }
+                .wijzig { margin-right: 10px; position: relative; float: right; top: 4px; }
+                .reactie_hover .delete,
+                .reactie_hover .wijzig,
+                .reactie_hover .button { display: block !important; position: absolute; }
+                .reactie .delete, .reactie .wijzig, .reactie .button { display: none; }
+      .om .auteur {} .en_om .auteur {}
+      .om .datum {} .en_om .datum {}
+    .reactie_tekst { font-size: 11px; position: relative; float: left; clear: both; width:345px;}
+    .reactie_profiel_pic_bottom { display: none; }
+    
+    .reactie_profiel_pic img { width: 32px; height: 32px; }
+    .tijdlijn_reactie_profilepic img { width: 32px; height: 32px; }
+    .nieuwsitem_content img { width: 50px; height: 50px; border: 0px; }

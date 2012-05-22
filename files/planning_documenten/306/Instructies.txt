@@ -1,0 +1,92 @@
+ADOBE INDESIGN-AFDRUKINSTRUCTIES VOOR SERVICE PROVIDER
+
+NAAM PUBLICATIE: IJs.nu-vcard2.indd
+
+PAKKETDATUM: 31-5-2011 17:42
+Aanmaakdatum: 29-5-2011
+Wijzigingsdatum: 16-11-2010
+
+CONTACTGEGEVENS
+
+Bedrijfsnaam: 
+Contactpersoon: 
+Adres: 
+
+
+
+
+
+Telefoon: 
+Fax: 
+E-mail: 
+
+SPECIALE INSTRUCTIES EN ANDERE OPMERKINGEN
+
+
+
+
+
+
+Externe plug-ins 0
+Niet-dekkende objecten:Op paginaPB, 1, 2
+
+LETTERTYPEN
+4 gebruikte lettertypen; 0 ontbrekend, 0 ingesloten, 0 onvolledig, 0 beveiligd
+
+Lettertypen ingesloten
+- Naam: Arial-BoldItalicMT; Type: OpenType TrueType, Status: OK
+- Naam: Arial-ItalicMT; Type: OpenType TrueType, Status: OK
+- Naam: CooperBlackStd-Italic; Type: OpenType Type 1, Status: OK
+- Naam: Georgia-BoldItalic; Type: OpenType TrueType, Status: OK
+
+
+KLEUREN EN INKTEN
+4 procesinkten; 0 steuninkten
+
+- Naam en type: Proceskleur Cyaan; Hoek: 0,000; Lijnen/inch: 0,000
+- Naam en type: Proceskleur Magenta; Hoek: 0,000; Lijnen/inch: 0,000
+- Naam en type: Proceskleur Geel; Hoek: 0,000; Lijnen/inch: 0,000
+- Naam en type: Proceskleur Zwart; Hoek: 0,000; Lijnen/inch: 0,000
+
+
+KOPPELINGEN EN AFBEELDINGEN
+(Alleen ontbrekende en ingesloten koppelingen)
+Koppelingen en afbeeldingen: 6 gevonden koppelingen; 0 gewijzigd, 0 ontbrekend
+Afbeeldingen: 0 ingesloten, 4 gebruiken RGB-kleurenruimte
+
+
+AFDRUKINSTELLINGEN
+PPD: n.v.t., (PDF Complete)
+Afdrukken naar: Printer
+Aantal exemplaren: 1
+Lezer spreads: Nee
+Even/oneven pagina's: Beide
+Pagina's: Alles
+Proef: Nee
+Naast elkaar: Geen
+Schalen: 100%, 100%
+Paginapositie: Linksboven
+Lagen afdrukken: Zichtbare & afdrukbare lagen
+Drukkersmarkeringen: Geen
+Aflopend: 0 mm, 0 mm, 0 mm, 0 mm
+Kleur: Samengesteld RGB
+Overvulmodus: Geen
+Afbeeldingsgegevens verzenden: Geoptimaliseerde subsampling
+Vervanging OPI/DCS-afbeelding: Nee
+Paginaformaat: Aangepast: 85 mm x 55 mm
+Papierafmetingen: 215,9 mm x 279,4 mm
+Stand: Liggend
+Negatief: Nee
+Spiegelmodus: Uit
+
+
+BESTANDSPAKKETLIJST
+
+1. IJs.nu-vcard2.indd; type: Adobe InDesign-publicatie; grootte: 7232K
+2. ARIALBI.TTF; type: Lettertypebestand; grootte: 221K
+3. ARIALI.TTF; type: Lettertypebestand; grootte: 202K
+4. CooperBlackStd-Italic.otf; type: Lettertypebestand; grootte: 35K
+5. georgiaz.TTF; type: Lettertypebestand; grootte: 155K
+6. shutterstock_14584906.psd; type: Gekoppeld bestand; grootte: 225399K
+7. shutterstock_18796336-b.ai; type: Gekoppeld bestand; grootte: 196K
+8. snow.psd; type: Gekoppeld bestand; grootte: 162302K

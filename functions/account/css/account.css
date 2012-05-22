@@ -1,0 +1,217 @@
+#account { position: relative; float: left; width: 1280px; }
+.account_header { width: 100%; height: 20px; margin-bottom: 20px; padding: 7px 0px 7px 20px; background: #F3ECE4; position: relative; float: left; }
+.info_title { font-size: 15px; font-weight: bold; color: #73532A; position: relative; float: left; }
+.info_title_desc {font-size: 10px; font-weight: normal; font-style: italic;}
+
+#account_menu { width: 200px; margin: 10px 20px 0px 0px; position: relative; float: left; }
+ .menuitem { width: 205px; position: relative; float: left; cursor: pointer; padding-left: 5px; }
+ .menuitem:hover { background: #F3ECE4 url("images/bkg_dropshadow_right.png") top left repeat-y; border-right: 10px solid #CEB08A; }
+ .active { width: 205px; padding-left: 5px; background: #F3ECE4 url("images/bkg_dropshadow_right.png") top left repeat-y; border-right: 10px solid #CEB08A; }
+ .menuitem img { position: relative; float: left; width: 48px; height: 48px; border: none; padding-right: 5px; }
+ .menuitem h3 { margin-top: 15px; position: relative; float: left; }
+ .sprite_image { background-image: url("images/sprite.png"); width: 48px; height: 48px; position: relative; float: left; margin-right: 10px; } 
+ #sprite_info { background-position: 0px 0px; } #sprite_foto { background-position: -50px -50px; }
+ #sprite_kennis { background-position: -50px 0px; } #sprite_links { background-position: 0px -50px; }
+ #sprite_competentie { background-position: 0px -100px; } #sprite_instellingen { background-position: -50px -100px; }
+
+#account_rest { width: 1060px; position: relative; float: right; }
+    #account_ajax{float:left; position:relative; width:100%;}
+#account_center { width: 520px; margin: 0px 20px 20px 0px; position: relative; float: left; overflow: hidden; }
+#account_right { width: 520px; position: relative; float: left; overflow: hidden; }
+#account_center #wijzig_pers_info input,
+#account_center #wijzig_login_info input  { width: 317px; }
+/*
+* wijzig informatie 
+*/
+.wijzig_info_form { padding-left: 20px; position: relative; float: left; }
+.wijzig_info { position: relative; float: left; width: 100%; margin-bottom: 20px; }
+.wijzig_info button { position: relative; float: right; }
+.input_label { position: relative; float: left; font-weight: bold; }
+.wijzig_info_response { position: absolute; width: 456px; }
+#pers_info_response .wijzig_info_success { position: absolute; color: #008000; top: 190px; }
+#login_info_response .wijzig_info_success { position: absolute; color: #008000; top: 195px; }
+#social_info_response .wijzig_info_success { position: absolute; color: #008000; top: 335px; }
+#pers_info_response .wijzig_info_error { position: absolute; color: #F00; }
+#login_info_response .wijzig_info_error { position: absolute; color: #F00; }
+  .wijzig_info_error ul { list-style-type: circle; list-style-image: none; position: relative; float: left; }
+  .info_error { position: relative; float: left; width: 100%; }
+ .error_header, .error_footer { font-weight: bold; position: relative; float: left; width: 100%; }
+.uitleg { width: 100%; margin: 5px 0px 15px 0px; color: #BBB; position: relative; float: left; }
+#account_right .uitleg { margin-top: 0px; }
+#pers_send_row,
+#login_send_row,
+#social_send_row { margin-top: 10px; position: relative; float: right; }
+
+#wijzig_pers_info { }
+ #pers_voornaam_row, #pers_achternaam_row, #pers_email_row, #pers_telefoon_row { position: relative; float: left; width: 100%; }
+ #wijzig_pers_info .input_label { width: 160px; }
+ 
+#wijzig_login_info { }
+ #login_gebruikersnaam_row, #login_wachtwoord_row, #login_wachtwoord_check_row { position: relative; float: left; width: 100%; }
+ #wijzig_login_info .input_label { width: 160px; }
+ 
+#wijzig_social_info { }
+#social_info_header { border-bottom: none !important; }
+ .social_wijzig_row { position: relative; float: left; width: 100%; padding: 5px 0; }
+  .social_image_column { width: 30px; height: 24px; position: relative; float: left; }
+   .social_preview_img { width: 24px; height: 24px; position: relative; float: left; } 
+   #facebook_sprite { background: url("images/img_icon_24_facebook.png") top left no-repeat; }
+   #google_plus_sprite { background: url("images/img_icon_24_google.png") top left no-repeat; }
+   #linkedin_sprite { background: url("images/img_icon_24_linkedin.png") top left no-repeat; }
+   #skype_sprite { background: url("images/img_icon_24_skype.png") top left no-repeat; }
+   #twitter_sprite { background: url("images/img_icon_24_twitter.png") top left no-repeat; }
+   #youtube_sprite { background: url("images/img_icon_24_youtube.png") top left no-repeat; }
+   #hyves_sprite { background: url("images/img_icon_24_hyves.png") top left no-repeat; }
+   
+   .social_preview_img { position: relative; float: left; position: relative; }
+   .social_input_column { width: 380px; position: relative; float: left; }
+   .social_input_column .input_label { width: 100%; margin: 0; }
+   .social_input_column input { width: 452px; margin: 0; }
+   .social_preview_img { position: relative; float: left; }
+   #account_right .social_input_column .textfield { padding: 3px 10px 4px 5px !important; }
+ 
+/* 
+* Foto's uploaden en aanpassen
+*/
+#foto_center_placeholder { position: relative; float: left; width: 100%; height: 520px; }
+.uploaden { width: 478px; position: absolute; }
+.uploaden .uploadifyQueueItem { 
+ background-color: #FFF; 
+ border: none; 
+ border-bottom: 1px solid #E5E5E5; 
+ font: 11px Verdana, Geneva, sans-serif; 
+ height: 50px; 
+ margin-top: 0; 
+ padding: 10px; 
+ width: 465px; 
+ }
+.fotos_uploaden { position: relative; float: left; width: 475px }
+.uploaden .uploadifyError { background-color: #FDE5DD !important; border: none !important; border-bottom: 1px solid #FBCBBC !important; }
+.uploaden .uploadifyQueueItem .cancel { position: relative; float: right; }
+.uploaden .uploadifyQueue .completed { color: #C5C5C5; }
+.uploaden .uploadifyProgress { background-color: #E5E5E5; margin-top: 10px; width: 100%; }
+.uploaden .uploadifyProgressBar { background-color: #0099FF; height: 3px; width: 1px; }
+.uploaden #custom-queue { border: 1px solid #E5E5E5; height: 33em; margin-bottom: 10px; width: 450px; overflow: auto; }
+
+#foto_album { position: relative; float: right; width: 500px; }
+.afbeeldingen { list-style: none; margin: 0; }
+ .afbeeldingen li { position: relative; float: left; width: 160px; }
+ .afbeeldingen li textarea { vertical-align: top; display: block; line-height: 1; width: 128px; overflow: hidden; position: relative; float: left; }
+ .afbeeldingen li img { background: transparent url(images/bkg_images.png) bottom right no-repeat; border: none; padding: 0px 10px 10px 0px;/* border-image: initial;*/ }
+  
+ .foto_aanpassen, .foto_aanpassen_hover { width: 157px; margin-top: 20px; position: relative; float: left; }
+ .ui-sortable-placeholder { width: 160px; position: relative; float: left; margin-right: 26px; margin-bottom: 20px; height: 100px; background: #ccc; visibility: visible!important; }
+ .foto_holder { height: 110px; position: relative; float: left; }
+ .foto_aanpassen span { display: none; }
+ .foto_aanpassen form { position: relative; float: left; }
+ .foto_options { background-color: black; opacity: 0.6; filter: alpha(opacity=60); width: 140px; position: absolute; padding: 0 5px; left: 0px; z-index: 1; }
+ .verwijder_foto { font-weight: bold; color: #FFF; position: relative; float: right; display: block; cursor: pointer; }
+ a.verwijder_foto:link, a.verwijder_foto:visited { color: white !important; }
+ 
+/*
+* Kennis toevoegen en prioritarizeren (of hoe je dat ook schrijft)
+*/
+#kennis_invoer { position: relative; float: left; }
+ #kennis_goed_in_form { width: 300px; padding-left: 20px; position: relative; float: left; }
+  #goed_in_schrijven { width: 478px; margin-bottom: 20px; position: relative; float: left; }
+ #kennis_invoer_form { width: 100%;position: relative; float: left; }
+  #kennis_schrijven { width: 390px; margin: 0px 0px 20px 20px; position: relative; float: left; }
+  #kennis_opslaan { margin-top: 8px; position: relative; float: right; }
+
+#kennis_overzicht { position: relative; float: left; width: 100%; }
+ #kennis_overzicht_header { border-bottom: none !important; }
+ #kennis_overzicht_list { width: 100%; margin-left: 20px;  list-style: none; position: relative; float: left; margin: 0; padding: 0;}
+  .kennis,
+  .top_kennis { width: 480px; height: 25px; margin: 0px 0px 5px 20px; padding: 5px 10px 3px 10px; background: #F3ECE4; border-bottom: 1px solid #DED1C1; border-top: 1px solid #FFF; position: relative; float: left; cursor: move; }
+   .kennis .kennis_left { width: 400px; position: relative; float: left; }
+   .kennis .kennis_right { width: 50px; position: relative; float: right; }
+    .kennis_delete { width: 24px; position: absolute; top: 0px; right: -12px; cursor: pointer !important; }
+    .kennis_social { width: 24px; margin-right: 20px; position: relative; float: right; cursor: pointer !important; z-index: 100; }
+    .kennis .kennis_delete { display: none; }
+    .kennis_hover .kennis_delete { display: block !important; }
+	.top_kennis .kennis_delete { display: none; }
+	.kennis_hover .kennis_delete { display: block !important; }
+    
+#top_10_kennis { position: relative; float: left; width: 100%; }
+ #kennis_top_10_header { border-bottom: none !important; }
+ #top_10_list { position: relative; float: left; list-style: none; margin: 0; width: 100%; }
+ .top_kennis .kennis_left { width: 370px; position: relative; float: left; }
+ .top_kennis .kennis_right { position: relative; float: right; width: 105px; }
+ .top_kennis .kennis_uit_top_10 { display: none; }
+ .kennis_hover .kennis_uit_top_10 { padding-top: 3px; margin-right: 5px; color: #808080; position: relative; float: left; display: block !important; cursor: pointer !important; }
+ .kennis_uit_top_10_hover { text-decoration: underline; }
+ .top_kennis_leeg { cursor: default !important; color: #808080; font-style: italic; }
+/*
+* URL's toevoegen en prioteit toekennen
+*/
+#kennis_invoer { position: relative; float: left; }
+ #links_invoer_form { width: 100%; margin-bottom: 25px; padding-left: 20px; position: relative; float: left; }
+ #links_invoer_form label { position: relative; float: left; width: 100%; font-weight: bold; }
+ #links_invoer_form .link_input { position: relative; float: left; }
+ #url_invoer { width: 415px; margin-bottom: 10px; position: relative; float: left; }
+ #url_beschrijving_invoer { width: 415px; position: relative; float: left; }
+ 
+ #overgebleven_beschrijving { margin-bottom: 10px; color: #808080; position: relative; float: left; }
+ #overgebleven_beschrijving #overgebleven_aantal { color: green; }
+ .code_orange #overgebleven_aantal { color: orange !important; }
+ .code_red #overgebleven_aantal { color: red !important; }
+
+#links_overzicht { position: relative; float: left; width: 100%; }
+#links_overzicht_header { border-bottom: none !important; }
+#links_overzicht_list { width: 100%; list-style: none; margin: 0px; padding-left: 20px; position: relative; float: left; }
+.link,
+.top_link { width: 480px; margin-bottom: 5px; padding: 5px 10px; background: none repeat scroll 0 0 #F3ECE4; border-bottom: 1px solid #DED1C1; border-top: 1px solid #FFF; position: relative; float: left; cursor: move; }
+#top_10_links .link,
+#top_10_links .top_link { width: 500px; }
+.link .link_left { width: 450px; position: relative; float: left; }
+.link .categorie { position: relative; float: left; width: 430px; color: #808080; font-size: 12px; }
+.link .link_right { position: relative; float: right; width: 16px; }
+.link .link_delete { width: 16px; cursor: default !important; position: absolute; top: 2px; right: -3px; }
+.link .link_delete { display: none; }
+.link_hover .link_delete { display: block !important; }
+.top_link .link_delete { display: none; }
+.link_hover .link_delete { display: block !important; }
+.link_delete img { cursor: pointer; }
+    
+#top_10_links { position: relative; float: left; width: 100%; }
+ #links_top_10_header { border-bottom: none !important; }
+ #top_10_list { position: relative; float: left; list-style: none; margin: 0; width: 100%; }
+  .top_link .link_left { width: 430px; position: relative; float: left; }
+  .top_link .categorie { position: relative; float: left; width: 430px; color: #808080; font-size: 12px; }
+  .top_link .link_right { width: 52px; margin-right: 15px; position: relative; float: right; }
+   .top_link .link_delete { position: absolute; top: 2px; right: -18px; cursor: default !important; }
+   .top_link .link_uit_top_10 { display: none; }
+   .link_hover .link_uit_top_10 { width: 100px; color: #808080; position: relative; float: left; display: block !important; cursor: default !important; }
+   .link_uit_top_10_hover { text-decoration: underline; }
+ .top_link_leeg { cursor: default !important; color: #808080; font-style: italic; }
+ .link_volgnummer { position: relative; float: left; width: 20px; }
+button#link_opslaan { margin: 6px 0px 0px 5px; position: relative; float: left; }
+select#url_categorie_select { width: 200px; padding: 3px 3px !important; position: relative; float: left; }
+.wijzig_info_success { width: 500px; margin: 0px 0px 10px 0px; color: #008000; }
+#waiting { width: 500px; padding: 10px 0; text-align: center; }
+#waiting_text { display: none; }
+
+/*
+* Competenties toevoegen en hier uren aan toekennen
+*/
+#competentie_invoer { position: relative; float: left; }
+ #competentie_invoer_form { width: 510px;position: relative; float: left; padding: 10px;}
+  #competentie_schrijven { width: 390px; margin: 0px 0px 20px 20px; position: relative; float: left; }
+  #competentie_opslaan { margin-top: 8px; position: relative; float: right; }
+  
+  #competentie_overzicht_headers,  #competentie_overzicht_footers { float: left; font-weight: 700; padding: 10px 10px 5px 10px; position: relative; width: 500px; }
+  #competentie_overzicht_list{float:left; position:relative; width:500px; padding:10px;}
+  #competentie_overzicht_header.account_header { margin-bottom: 5px; }
+  #competentie_invoer_header.account_header { margin-bottom: 5px; }
+  
+  .competentie_uur{float: left; position: relative; width:500px; margin-bottom:1px; background: #F3ECE4; border-bottom: 1px solid #DED1C1; border-top:1px solid #fff;}
+  .competentie, .competentie_header { float: left; position: relative; width: 195px; font-weight: 700; padding: 5px 0 0 10px; }
+  
+  .uren_header{float: right; position: relative;}
+  .uren { float: right; position: relative; width: 70px; }
+  	.uren input { width: 20px; }
+  
+  .delete { float: right; position: relative; padding:5px 0 0 5px;}
+  	.delete img{position: absolute; right: 5px; border:none; cursor:pointer; z-index: 1;}
+  
+	  

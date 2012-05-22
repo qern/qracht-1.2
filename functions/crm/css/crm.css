@@ -1,0 +1,185 @@
+/*
+ *   Algemene onderdelen van het crm (links en het deel rechts)
+ */
+#crm{float:left; position:relative; width:1280px;}
+	#crm_left{float:left; position:relative; width:200px; padding:10px;}
+		#organisatie_menu, #relatie_menu{float:left; position:relative; width:100%;}
+		.active_focus{background: url("/images/bkg_btn_orange.gif") repeat-x scroll left bottom #F58622; cursor: pointer;}
+		.menuitem { cursor: pointer; float: left; padding-left: 5px; position: relative; width: 195px; }
+		.menuitem:hover { background: url("images/bkg_dropshadow_right.png") repeat-y scroll left top #F3ECE4; border-right: 10px solid #CEB08A; }
+		.menuitem h3 { float: left; margin-top: 15px; position: relative; }
+		.active {  background: url("images/bkg_dropshadow_right.png") repeat-y scroll left top #F3ECE4; border-right: 10px solid #CEB08A; padding-left: 5px; width: 195px; }
+		
+		.sprite_image { background-image: url("images/crm_sprite.png"); float: left; height: 48px; margin-right: 10px; position: relative; width: 48px; }
+		#sprite_relatie_toevoegen { background-position: 0 -58px; }
+		#sprite_organisatie_toevoegen { background-position: 0px 0px; }
+		#sprite_relatie_overzicht { background-position: 0 -174px; }
+		#sprite_organisatie_overzicht { background-position: 0 -116px; }
+		
+		#organisatie_zoeken, #relatie_zoeken { float:left; position:relative; margin: 15px 0px 10px 0px; width:100%;}
+			#organisatie_zoeken p, #relatie_zoeken p {position:relative; width:100%; font-weight:700}
+			#organisatie_zoeken p, #relatie_zoeken p { margin-bottom: 5px; }
+			#zoek_organisatie_naam, #zoek_relatie_naam{position:relative; width: 177px;}
+			#zoek_organisatie_send, #zoek_relatie_send {position:relative; float:right; top:5px; right: 2px; }
+		
+	#crm_right { float: left; position: relative; width: 1040px; padding: 15px 0px 20px 20px; }
+	label{position:absolute; padding:3px 0 0 12px; z-index: 1;}
+#branche_toevoegen_row { float:left; position:relative; width:270px; }
+#branche_toevoegen_row label { position:absolute; z-index:1; padding:5px 0 0 5px; }
+	#branche_submit { float: right; position: relative; top: 2px; }
+	select#branche { width: 175px; margin-right: 5px; }
+	
+/*
+ *   Het detail overzicht van een organisatie of relatie
+ */
+#crm_detail{float:left; position:relative; width: 1040px; }
+#crm_detail h2{margin:0; color:#333333;}
+	#detail_top{background: none repeat scroll 0 0 #DED1C1; border-radius: 3px 3px 3px 3px; float: left; margin: 0px 0px 20px 0px; padding: 10px; position: relative; width: 1020px;}
+		#detail_top h2{float: left; font-size: 18px; margin: 0; width: 900px;}
+		#detail_wijzigen, #detail_contactpersoon_toevoegen{  position: absolute; right: 7px; top: 7px; width: 140px;}
+	
+	#detail_links{float:left; position:relative; width:805px;}
+		#detail_links label { float: left; position: relative; width: 100px; font-weight: 700; padding: 0px; }
+		#detail_links #persoonscontact label { float: left; position: relative; width: 130px; font-weight: 700; padding: 0px; }
+		.info_item{float:left; position:relative; width:150px;}
+		#organisatie_deel{float:left; position:relative; width:795px; margin-bottom: 15px; }
+		#organisatie_deel_header, #relatie_deel_header{ background: none repeat scroll 0 0 #DED1C1; border-radius: 3px 3px 3px 3px; float: left; padding: 10px; position: relative; width:780px}
+		
+			#relatie_functie, #relatie_functie_header, 
+			#organisatie_info, #persoonlijke_info,
+			#bedrijfsinfo, #persoonssinfo,
+			#bedrijf_adres, #persoon_adres{float:left; position:relative;}
+			#bedrijf_contact, #persoonscontact{float:left; position:relative;}
+			#bedrijfsinfo, #bedrijf_adres, #persoonscontact { width: 300px; }
+			#bezoek_adres_container { margin-bottom: 10px; }
+			
+			#relatie_functie_header{width:790px; padding:5px;}
+				.header{font-weight:700;}
+				.functie_bedrijf, .functie_naam, .functie_email, .functie_telefoon, .functie_titel, .functie_edit{float:left; position:relative;}
+				.functie_bedrijf{width:200px;}
+				.functie_naam{width:200px;}
+				.functie_email{width:195px;}
+				.functie_telefoon{width:195px;}
+				.functie_titel{width:180px;}
+				.functie_edit{width:25px; height:16px;}
+				    .functie_edit img{display:none;}
+				    .contactpersoon_hover .functie_edit img{display:block !important;}
+				.relatie_functie_body, .contactpersoon_body{background: none repeat scroll 0 0 #EEEEEE; float: left; margin-bottom: 5px; padding: 5px; position: relative; width: 790px;}
+			#bedrijfs_contact .info_item{width:150px;}
+			.relatie_functie_header { width: 800px; float:left; position:relative;}
+			#contactpersonen { margin-top: 10px; float:left; position:relative; width:800px; }
+			#detail_contactpersoon_toevoegen{width:190px}
+			
+			#persoonlijke_info, #organisatie_info{ width:900px; }
+			#persoonlijke_info { margin-top: 5px; }
+			#persoonlijke_info #persoonssinfo { width: 275px; }
+			#persoonlijke_info #persoon_adres { width: 225px; }
+			#persoonlijke_info #persoonscontact { width: 280px; }
+			    #contactpersoon_toevoegen{ position: absolute; right: 0px; top: -43px; }
+			    #contactpersoon_toevoegen:hover { background: #f58622 url("/images/bkg_btn_orange.gif") bottom left repeat-x; cursor: pointer; }
+				/*#bedrijfsinfo, #persoonssinfo{ width:200px;}*/
+					.address_row p {float:left; position:relative; font-weight:700; width:100%; margin-bottom: 0px !important;}
+					.address_row{float:left; position:relative; width:100%;}
+					#post_adres_container{ padding: 5px 0; }
+						#bezoek_adres, #post_adres, #adres{float:left; position:relative; width:100%;}
+						#bezoek_postcode, #post_postcode, #postcode{float:left; position:relative; margin-right:5px;}
+						#land{float:left; position:relative; width:100%;}
+				#bedrijf_contact, #persoonscontact{ width:300px; }
+		#relatie_deel{float:left; position:relative; width:790px; }
+		
+	#detail_rechts{float:right; position:relative; width:300px;}
+		#detail_tags button, #detail_bestanden button{float:right;}
+		
+/*
+ *   Het overzicht van organisaties of relaties
+ */
+#crm_right #overzicht h2 {background: none repeat scroll 0 0 #DED1C1; border-radius: 3px 3px 3px 3px; float: left; margin: 0px 0px 20px 0px; padding: 10px; position: relative; width: 1020px; color: #333; }
+ 
+#relatie_organisatie { margin-bottom: 10px; }
+#relatie_organisatie,
+#relatie_organisatie span { position: relative; float: left; }
+#relatie_organisatie .button { top: 0px; }
+#relatie_organisatie span#organisatie_focus { width: 66px; margin-right: 6px; text-align: center; }
+#relatie_organisatie span#relatie_focus { width: 66px; text-align: center; }
+#overzichtslijst { float: left; position: relative; width: 1020px; }
+    #organisatie_lijst_top, #relatie_lijst_top{float:left; position:relative; width:1010px; margin-bottom:10px; padding:5px;}
+        .organisatie_header, .relatie_header { float: left; position: relative; font-weight: 700; cursor: pointer; font-size: 13px; }
+    #organisatie_lijst_body, #relatie_lijst_body{float:left; position:relative; width:100%;}
+        .lijst_body{}
+        
+        .lijst_row{float:left; position:relative; width:1010px; padding: 10px 5px;border-bottom: 1px solid #DED1C1; cursor: pointer; }
+        .lijst_row_hover{background:#E6DBCE !important; }
+            .organisatie_kolom, .relatie_kolom{float:left; position:relative;}
+            .organisatie_organisatienaam_header, .organisatie_organisatienaam{ width: 200px; } 
+            .organisatie_branche_header, .organisatie_branche{ width: 200px; } 
+            .organisatie_adres_header, .organisatie_adres{ width: 200px; } 
+                .organisatie_adres_adres{float:left; position:relative; width:100%;}
+                .organisatie_adres_postcode {float:left; position:relative; margin-right:5px;}
+                .organisatie_adres_plaats{float:left; position:relative;}
+                .organisatie_adres_land{float:left; position:relative; width:100%;}
+            .organisatie_telefoon_header, .organisatie_telefoon{ width: 200px; }
+            .organisatie_email_header, .organisatie_email{ width: 200px; }
+            
+            .relatie_naam_header, .relatie_naam{ width: 200px; }  
+            .relatie_organisatie_header, .relatie_organisatie{ width: 200px; }    
+            .relatie_adres_header, .relatie_adres{ width: 200px; } 
+            .relatie_telefoon_header, .relatie_telefoon{ width: 200px; }   
+            .relatie_email_header, .relatie_email{ width: 200px; }
+
+/*
+ *   Het toevoegen of wijzigen van een organisatie of relatie
+ */
+
+#subprofiel { float: left; width: 1040px; }
+    #subprofiel_titel{background: none repeat scroll 0 0 #DED1C1; border-radius: 3px 3px 3px 3px; float: left; margin: 0px 0px 20px 0px; padding: 10px; position: relative; width: 1020px; color: #333;}
+#subprofiel #opslaan_container { width: 980px; }
+#waarschuw_mij_container{float:right; position:relative; width:171px;}
+#error_container { width: 100%; margin-bottom: 17px; position: relative; float: left; }
+#error_container h2 { width: 100%; margin-bottom: 5px; font-size: 12px; }
+    #error_titel{float:left; position:relative; width:205px;}
+    #errors { float: left; position: relative; list-style: disc; margin-left: 15px; color: red; font-size: 12px; }
+input.error, textarea.error, select.error, label.error { background: #E6DBCE!important; }
+
+#relatie_formulier, #organisatie_formulier { float:left; }
+#persoonsgegevens_wijzigen, #bedrijfsgegevens_wijzigen{float:left; position:relative; width:650px; margin-right:30px;}
+#werkgegevens_wijzigen{float:left; position:relative; width:300px; }
+    #persoonsgegevens_wijzigen label { font-size: 11px; font-weight: normal; float:left; padding: 3px 0 0 4px; position: absolute; left: 0; z-index: 1; }
+    #bedrijfsgegevens_wijzigen label { font-size: 11px; font-weight: normal; float:left; padding: 5px 0 0 5px; position: absolute; left: 0; z-index: 1; }
+    #werkgegevens_wijzigen label { font-size: 11px; font-weight: normal; float:left; padding: 3px 0 0 3px; position: absolute; left: 0; z-index: 1; left: 10px; }
+    #persoonsgegevens_wijzigen input,
+    #bedrijfsgegevens_wijzigen input,
+    #persoonsgegevens_wijzigen select,
+    #bedrijfsgegevens_wijzigen select { float: left; width: 180px;}
+    #opslaan_container input#opslaan { width: 205px; }
+    #werkgegevens_wijzigen h3 {float:left;}
+    #meer_bedrijven{float:right;}
+    #persoonsgegevens_wijzigen option{ padding:0 5px; }
+    #werkgegevens_wijzigen input, #werkgegevens_wijzigen textarea { float:left; width:280px; }
+    
+    .functie { float: left; position: relative; margin-bottom: 5px; }
+
+.input_container { width:100%; }
+
+#bedrijf_omschrijving { width:180px!important; }
+#wijzigen_contact,#wijzigen_org_contact{ float:left;  width:210px; }
+#opslaan_container { position: relative; width: 100%; float: left; margin: 30px auto 15px auto; text-align: right; }
+    #opslaan { position: relative; margin: auto; float: none!important; width: 100px; }
+#persoonsgegevens,#contactgegevens{ float:left; width:29%; }
+#adresgegevens { float:left; width:30%; }
+
+
+#gegevens_wijzigen textarea,.input_container,.input_container a{ float:left; position:relative; }
+
+#wijzigen_persoon, #wijzigen_organisatie, #wijzigen_organisatie,#wijzigen_adres,#wijzigen_org_adres { float:left; width:210px; margin-right:10px; }
+
+#wijzigen_persoon label, #wijzigen_organisatie label, #wijzigen_adres label, #wijzigen_org_adres label, #wijzigen_contact label, #wijzigen_org_contact label { width: 180px; left: 10px; }
+#wijzigen_persoon .input_container select { width: 203px; }
+#bedrijfsgegevens_wijzigen .textfield { margin-bottom: 5px; padding: 5px 10px 5px 13px; }
+#bedrijfsgegevens_wijzigen select { padding-left: 10px !important; }
+#persoonsgegevens_wijzigen .textfield { margin-bottom: 5px; padding: 5px 10px 5px 11px; }
+#werkgegevens_wijzigen .textfield { margin-bottom: 5px; }
+#persoonsgegevens_wijzigen h3,
+#werkgegevens_wijzigen h3 { margin-bottom: 10px; }
+#wijzigen_persoon select { padding-left: 10px; }
+#persoonsgegevens_wijzigen #opslaan_container { width: 983px; }
+#persoonsgegevens_wijzigen #opslaan_container input#opslaan { width: 302px; }

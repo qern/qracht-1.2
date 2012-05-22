@@ -1,0 +1,131 @@
+#urentool { width: 1280px; position: relative; float: left; }
+.titel { margin: 0; padding: 7px 5px; color: #FFF; float: left; }
+#dagen { width: 220px; margin-top: 5px; position: relative; float: left; }
+#dagen_titel { width: 220px; background: #CEB08A url("images/bkg_urentool_headers.gif") left top repeat-x; -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px 0 0 3px ; -khtml-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; position: relative; float: left; }
+#dagen_titel h2.titel { padding-left: 12px; }
+#dag_gereed { width: 180px; height: 23px; padding-top: 7px; text-align: center; font-size: 15px; font-weight: bold; color: #FFF; background: #74532A; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; position: relative; float: right; right: -215px; top: 0px; }
+#dag_gereed:hover { background: #EB6A0A; }
+a#dag_gereed:link,
+a#dag_gereed:visited {  text-decoration: none !important; color: #FFF !important; }
+a#dag_gereed:hover { text-decoration: none !important; color: #FFF !important; }
+
+#error_container, #wijzig_error_container{float:left; position:relative; width:100%;}
+	#error_title, #wijzig_error_title{color:red;} #succes_titel, #wijzig_succes_titel{color:green;}
+	#errors, #wijzig_errors{color:red;}
+	#inline_gereed{cursor:pointer;}
+	textarea.error, input.error { background: #E6DBCE !important; }
+#error_container { font-size: 12px; font-weight: normal !important; }
+#error_container h2 { margin-bottom: 3px; font-size: 12px !important; font-weight: normal !important; }
+
+#in_te_vullen_dagen { width: 225px; margin: 0; list-style-type: none; list-style-image: none; position: relative; float: left; overflow: hidden; }
+.selecteer_dag { width: 205px; font-size: 12px; padding: 5px; text-decoration: none; color: #1F497D; -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px 0 0 3px; -khtml-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; position: relative; float: left; cursor: }
+#selecteer_dag { margin-top: 10px; position: relative; float: left; }
+#datum_kiezen { width: 185px; height: 20px; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0 ; -khtml-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; }
+#datum_verzend { width: 205px; height: 25px; top: -2px; padding-bottom: 6px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; position: relative; float: left; background: #74532A;}
+#datum_verzend:hover {background: #f58622 url("/images/bkg_btn_orange.gif") bottom left repeat-x; cursor: pointer; }
+#invoer { width: 1040px; padding: 15px 0px 20px 20px; position: relative; float: left; }
+#invoer_titel { width: 825px; margin-bottom: 7px; background: url("images/bkg_urentool_headers.gif") top left repeat-x; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0 3px 3px 0; -khtml-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; position: relative; float: left; }
+#invoer_tabel { width: 1030px; position: relative; float: left;  padding:5px;}
+#urentable { font-size: 12px; font-family: georgia, arial; padding: 8px 0; }
+#urentable thead { text-align: left; }
+#urentable thead tr { padding: 0 0 10px 10px; }
+.om td, .en_om td { padding: 10px 10px 0 10px; background: #F3ECE4; border-bottom: 1px solid #DED1C1;}
+#uur_head { width: 32px; padding: 2px 5px; position: relative; float: left; }
+.uur { width: 32px; padding: 2px 5px; text-align: center; left: 4px; }
+.verwijder img { right: 4px; }
+/* toevoegen van uren */
+#uren_toevoegen { float: left; position: relative; width: 1040px; }
+#uren_toevoegen span label { width: 194px; padding: 3px 5px 0px 12px; position: absolute; display: block; z-index:1;}
+#bedrijf_activiteit { width: 258px; position: relative; float: left; }
+    #bedrijf_container { position: relative; float: left; }
+        #bedrijf { width: 230px; margin: 0px 2px 5px 0px; position: relative; float: left; }
+    #activiteit_container { width: 220px; position: relative; float: left; }
+        #activiteit_container label { width: 230px; margin: 4px 0px; padding: 0px !important; font-size: 14px; font-weight: 700; position: relative !important; float: left; }
+        #activiteit_container select { width: 252px; position: relative; float: left; }
+
+#werkzaamheden_container,#werkzaamheden { position: relative; float: left; width: 572px; }
+    #werkzaamheden_container textarea { width: 545px; height: 45px; margin-right: 2px; }
+       
+#archief_titel a:link,
+#archief_titel a:visited { color: #74532A; }
+#archief_titel a:hover { color: #FFF; }
+    
+#categorie_aantal_uur { width: 210px; position: relative; float: left; }
+    #categorie_aantal_uur select { width: 203px; margin-bottom: 5px; position: relative; float: right;  }
+    #aantal_uur_container { position: relative; float: right; width: 203px;}
+    #aantal_uur.textfield { width: 182px; margin-bottom: 1px; }
+    
+    #verstuur_uren { width: 203px; position: relative; float: right; right: 0px; top: 4px;}
+
+    #form_left{float:left; position:relative; width: 420px;}
+        .werkzaamheden_text { width: 395px; float: left; position: relative; }
+    #form_right{float:left; position:relative; width:155px;}
+        #wijzig_competentie{float:left; position:relative; width:100%; margin-top:1px;}
+        .aantal_uur_text { width: 15px; float: left; position: relative; }
+        #uren_wijzigen input.button{top:3px; float:right; width:113px;}
+        
+#archief, #overzicht { width: 1040px; margin: 25px 0 0 240px;; position: relative; float: left; }
+#urentool_ajax #archief { width: 1055px; margin: 25px 0 0 0; position: relative; float: left; }
+#archief_titel, #overzicht_titel{ width: 1025px; height: 25px; margin-bottom: 5px; padding: 5px 10px 5px 5px; color: #FFF; background: url("images/bkg_urentool_headers.gif") top left repeat-x; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; position: relative; float: left; }
+#archief_titel h2, #overzicht_titel h2 { width: 810px; margin-bottom: 0px; padding-top: 2px; text-align: center; color: #FFF; position: relative; float: left; }
+#archief_verder, #overzicht_verder { width: 100px; text-align: right; font-size: 20px; position: relative; float: right; }
+a#archief_verder:link,
+a#archief_verder:visited { text-decoration: none; color: #74532A; }
+a#archief_verder:hover { text-decoration: none; color: #FFF; }
+a#overzicht_verder:link,
+a#overzicht_verder:visited { text-decoration: none; color: #FFF; }
+a#overzicht_verder:hover { text-decoration: none; color: #FFF; }
+#archief_terug, #overzicht_terug { width: 100px; font-size: 20px; position: relative; float: left; left: 5px; }
+a#overzicht_terug:link,
+a#overzicht_terug:visited { text-decoration: none; color: #FFF; }
+a#overzicht_terug:hover { text-decoration: none; color: #FFF; }
+#archief_container, #overzicht_container { width: 1035px; position: relative; float: left; overflow: hidden; }
+#archief_headers, #overzicht_headers { width: 1040px; font-size: 13px; font-weight: bold; position: relative; float: left; }
+#archief_headers #linker_kolom { margin-right: 20px; }
+#archief_rijen, #overzicht_rijen { width: 1040px; position: relative; float: left; overflow: hidden; }
+.archief_item { width: 505px; margin: 0px 15px 8px 0px; font-size: 12px; position: relative; float: left; }
+	.archief_item .bedrijfsnaam { width: 445px; margin-right: 10px; padding: 5px 0 5px 5px; background-color: #eee; position: relative; float: left; }
+	.archief_item .aantal_uur { width: 40px; padding: 5px 5px 5px 0; text-align: right; background-color: #eee; position: relative; float: left; }
+.overzicht_item { width: 1050px; margin: 0px 28px 8px 0px; font-size: 16px; position: relative; float: left;  background: #F3ECE4; border-bottom: 1px solid #DED1C1; border-top:1px solid #fff;}
+	.overzicht_item .bedrijfsnaam { width: 405px; margin-right: 10px; padding: 5px 0 5px 5px; position: relative; float: left; }
+	.overzicht_item .aantal_uur { width: 40px; padding: 5px 5px 5px 0; text-align: right; position: relative; float: left; }
+
+#invoer_titel a,
+#invoer_titel a:link,
+#invoer_titel a:visited { color: #74532A; text-decoration: none; }
+#invoer_titel a:hover,
+#invoer_titel a:active { color: #EB6A0A; text-decoration: none; }
+#invoer_titel h2 { margin-left:  8px; }
+.selecteer_dag { width: 200px; padding: 7px 10px; color: #333; position: relative; float: left; }
+.selecteer_dag_hover { width: 190px; padding-left: 10px; background: url("images/bkg_dropshadow_right.png") repeat-y scroll left top #F3ECE4; border-right: 10px solid #CEB08A; cursor: pointer; }
+.om,
+.en_om { width: 200px; padding: 5px 0 5px 10px; }
+#klant_head,
+.klant { width: 227px; padding: 2px 5px; }
+#werkzaamheden_head,
+.werkzaamheden { width: 493px; padding: 2px 5px; left: 2px; }
+#competentie_head,
+.competentie { width: 200px; padding: 2px 5px; }
+#verwijder_head,
+.verwijder { width: 200px; padding: 2px 5px; left: 6px; }
+
+#linker_kolom,
+#rechter_kolom { width: 510px; position: relative; float: left; }
+#klant_links,
+#klant_rechts { width: 445px; margin-bottom: 5px; position: relative; float: left; }
+#uur_links { width: 56px; margin-bottom: 5px; text-align: right; position: relative; float: left; }
+#uur_rechts { width: 45px; margin-bottom: 5px; text-align: right; position: relative; float: left; }
+#verstuur_uren.button { height: 24px; padding-bottom: 6px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; }
+#verstuur_uren.button:hover { background: #f58622 url("/images/bkg_btn_orange.gif") bottom left repeat-x; cursor: pointer; }
+td.acties { height: 25px; margin-left: 6px; padding: 13px 5px 0px 5px; }
+.acties img{cursor:pointer;}
+.klant_text { width: 100%; margin: 0px; position: relative; float: left; }
+.activiteit_text { font-size: 11px; font-style: italic; color: #808080; }
+.urentool_text input { background: transparent; border: none; }
+.urentool_text textarea { background: transparent; border: none; }
+.urentool_text .save { display: none; }
+.urentool_input .save { display: block; }
+
+/* DE RAPPORTAGES */
+#urentool_menu{float:left; position:relative; width: 220px;}
+#urentool_rest{float:left; position:relative; width:1050px; padding:5px;}

@@ -1,0 +1,18 @@
+order deny,allow
+allow from 82.170.169.99
+allow from 62.45.89.119
+deny from all
+
+
+<Directory>
+AllowOverride All
+</Directory>
+AddType application/x-httpd-php .html
+AddHandler fcgid-script .html .htm
+RewriteEngine On
+RewriteRule ^typo3$ - [L]
+RewriteRule ^typo3/.*$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule .* index.php

@@ -1,0 +1,13 @@
+#prioriteit{float:left; width:340px;}
+            .prio_image{float:left; width:80px; margin-right:5px;}
+                .inactive_prio{opacity:0.5; filter: alpha(opacity=50);}
+                .hover_prio{opacity:0.7; filter: alpha(opacity=70);}
+                .active_prio{opacity:1.0; filter: alpha(opacity=100);}
+            .prio_beschrijving{float:left; width:80px; margin-right:5px;}
+            
+#type{float:left; width:340px;}
+            .type_image{float:left; width:80px; margin-right:5px;}
+                .inactive_type{opacity:0.5; filter: alpha(opacity=50);}
+                .hover_type{opacity:0.7; filter: alpha(opacity=70);}
+                .active_type{opacity:1.0; filter: alpha(opacity=100);}
+            .type_beschrijving{float:left; width:80px; margin-right:5px;}
